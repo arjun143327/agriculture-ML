@@ -67,8 +67,13 @@ def load_data(dataset_name):
 
 def main():
     datasets = ['CY-Bench', 'SustainBench']
+    from sklearn.linear_model import Ridge
+    from sklearn.pipeline import make_pipeline
+    from sklearn.preprocessing import StandardScaler
+    
     models = {
-        'Linear Regression': LinearRegression(),
+        'Ridge (alpha=1.0)': make_pipeline(StandardScaler(), Ridge(alpha=1.0)),
+        'Ridge (alpha=10.0)': make_pipeline(StandardScaler(), Ridge(alpha=10.0)),
         'Random Forest': RandomForestRegressor(n_estimators=50, random_state=42, n_jobs=-1),
         'XGBoost': XGBRegressor(n_estimators=50, random_state=42, n_jobs=-1)
     }

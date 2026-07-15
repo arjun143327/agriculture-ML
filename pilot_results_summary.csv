@@ -1,8 +1,12 @@
 Dataset,Model,Split,RMSE,R2,Gap (RMSE),Gap (R2)
-CY-Bench,Linear Regression,Random,1.671 ± 0.006,0.516 ± 0.050,-,-
-CY-Bench,Linear Regression,Spatial,1.922 ± 0.236,0.265 ± 0.245,+0.252,-0.251
-CY-Bench,Linear Regression,Temporal,1.638 ± 0.023,0.554 ± 0.052,+-0.033,--0.038
-CY-Bench,Linear Regression,Spatiotemporal,1.990 ± 0.355,0.124 ± 0.386,+0.319,-0.392
+CY-Bench,Ridge (alpha=1.0),Random,1.666 ± 0.008,0.518 ± 0.051,-,-
+CY-Bench,Ridge (alpha=1.0),Spatial,1.916 ± 0.244,0.269 ± 0.251,+0.250,-0.250
+CY-Bench,Ridge (alpha=1.0),Temporal,1.621 ± 0.017,0.564 ± 0.046,+-0.045,--0.045
+CY-Bench,Ridge (alpha=1.0),Spatiotemporal,1.981 ± 0.366,0.128 ± 0.396,+0.315,-0.391
+CY-Bench,Ridge (alpha=10.0),Random,1.668 ± 0.008,0.517 ± 0.049,-,-
+CY-Bench,Ridge (alpha=10.0),Spatial,1.909 ± 0.263,0.272 ± 0.264,+0.240,-0.246
+CY-Bench,Ridge (alpha=10.0),Temporal,1.608 ± 0.022,0.571 ± 0.041,+-0.060,--0.054
+CY-Bench,Ridge (alpha=10.0),Spatiotemporal,1.970 ± 0.388,0.131 ± 0.415,+0.302,-0.386
 CY-Bench,Random Forest,Random,1.249 ± 0.031,0.728 ± 0.041,-,-
 CY-Bench,Random Forest,Spatial,1.686 ± 0.178,0.442 ± 0.143,+0.437,-0.286
 CY-Bench,Random Forest,Temporal,1.263 ± 0.034,0.736 ± 0.019,+0.014,--0.008
@@ -11,10 +15,14 @@ CY-Bench,XGBoost,Random,1.185 ± 0.019,0.755 ± 0.033,-,-
 CY-Bench,XGBoost,Spatial,1.701 ± 0.032,0.442 ± 0.059,+0.516,-0.313
 CY-Bench,XGBoost,Temporal,1.291 ± 0.059,0.722 ± 0.046,+0.106,-0.034
 CY-Bench,XGBoost,Spatiotemporal,1.962 ± 0.130,0.196 ± 0.077,+0.777,-0.560
-SustainBench,Linear Regression,Random,0.683 ± 0.127,-0.014 ± 0.396,-,-
-SustainBench,Linear Regression,Spatial,0.599 ± 0.017,0.250 ± 0.008,+-0.084,--0.264
-SustainBench,Linear Regression,Temporal,0.749 ± 0.149,-0.237 ± 0.398,+0.066,-0.223
-SustainBench,Linear Regression,Spatiotemporal,0.652 ± 0.085,0.165 ± 0.116,+-0.031,--0.179
+SustainBench,Ridge (alpha=1.0),Random,0.683 ± 0.127,-0.014 ± 0.398,-,-
+SustainBench,Ridge (alpha=1.0),Spatial,0.599 ± 0.017,0.250 ± 0.008,+-0.084,--0.265
+SustainBench,Ridge (alpha=1.0),Temporal,0.749 ± 0.150,-0.235 ± 0.401,+0.066,-0.221
+SustainBench,Ridge (alpha=1.0),Spatiotemporal,0.652 ± 0.085,0.165 ± 0.117,+-0.031,--0.179
+SustainBench,Ridge (alpha=10.0),Random,0.686 ± 0.131,-0.023 ± 0.410,-,-
+SustainBench,Ridge (alpha=10.0),Spatial,0.600 ± 0.017,0.249 ± 0.009,+-0.086,--0.272
+SustainBench,Ridge (alpha=10.0),Temporal,0.750 ± 0.154,-0.240 ± 0.413,+0.065,-0.217
+SustainBench,Ridge (alpha=10.0),Spatiotemporal,0.654 ± 0.086,0.162 ± 0.119,+-0.032,--0.185
 SustainBench,Random Forest,Random,0.535 ± 0.008,0.401 ± 0.007,-,-
 SustainBench,Random Forest,Spatial,0.546 ± 0.023,0.378 ± 0.023,+0.011,-0.023
 SustainBench,Random Forest,Temporal,0.630 ± 0.048,0.133 ± 0.101,+0.096,-0.268
