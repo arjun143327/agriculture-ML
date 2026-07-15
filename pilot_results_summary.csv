@@ -1,0 +1,25 @@
+Dataset,Model,Split,RMSE,R2,Gap (RMSE),Gap (R2)
+CY-Bench,Linear Regression,Random,1.671 ± 0.006,0.516 ± 0.050,-,-
+CY-Bench,Linear Regression,Spatial,1.922 ± 0.236,0.265 ± 0.245,+0.252,-0.251
+CY-Bench,Linear Regression,Temporal,1.638 ± 0.023,0.554 ± 0.052,+-0.033,--0.038
+CY-Bench,Linear Regression,Spatiotemporal,1.990 ± 0.355,0.124 ± 0.386,+0.319,-0.392
+CY-Bench,Random Forest,Random,1.249 ± 0.031,0.728 ± 0.041,-,-
+CY-Bench,Random Forest,Spatial,1.686 ± 0.178,0.442 ± 0.143,+0.437,-0.286
+CY-Bench,Random Forest,Temporal,1.263 ± 0.034,0.736 ± 0.019,+0.014,--0.008
+CY-Bench,Random Forest,Spatiotemporal,1.820 ± 0.100,0.300 ± 0.116,+0.571,-0.428
+CY-Bench,XGBoost,Random,1.185 ± 0.019,0.755 ± 0.033,-,-
+CY-Bench,XGBoost,Spatial,1.701 ± 0.032,0.442 ± 0.059,+0.516,-0.313
+CY-Bench,XGBoost,Temporal,1.291 ± 0.059,0.722 ± 0.046,+0.106,-0.034
+CY-Bench,XGBoost,Spatiotemporal,1.962 ± 0.130,0.196 ± 0.077,+0.777,-0.560
+SustainBench,Linear Regression,Random,0.683 ± 0.127,-0.014 ± 0.396,-,-
+SustainBench,Linear Regression,Spatial,0.599 ± 0.017,0.250 ± 0.008,+-0.084,--0.264
+SustainBench,Linear Regression,Temporal,0.749 ± 0.149,-0.237 ± 0.398,+0.066,-0.223
+SustainBench,Linear Regression,Spatiotemporal,0.652 ± 0.085,0.165 ± 0.116,+-0.031,--0.179
+SustainBench,Random Forest,Random,0.535 ± 0.008,0.401 ± 0.007,-,-
+SustainBench,Random Forest,Spatial,0.546 ± 0.023,0.378 ± 0.023,+0.011,-0.023
+SustainBench,Random Forest,Temporal,0.630 ± 0.048,0.133 ± 0.101,+0.096,-0.268
+SustainBench,Random Forest,Spatiotemporal,0.619 ± 0.082,0.249 ± 0.109,+0.084,-0.152
+SustainBench,XGBoost,Random,0.548 ± 0.011,0.371 ± 0.016,-,-
+SustainBench,XGBoost,Spatial,0.560 ± 0.023,0.345 ± 0.026,+0.012,-0.026
+SustainBench,XGBoost,Temporal,0.655 ± 0.035,0.065 ± 0.081,+0.107,-0.307
+SustainBench,XGBoost,Spatiotemporal,0.627 ± 0.111,0.225 ± 0.182,+0.080,-0.146
