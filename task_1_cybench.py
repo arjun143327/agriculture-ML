@@ -87,24 +87,41 @@ def main():
         # Merge loc to yield
         df = pd.merge(df_yield, df_loc[['adm_id', 'latitude', 'longitude']], on='adm_id', how='left')
         
-        # Merge meteo if exists
-        if meteo_file in csv_files:
-            with z.open(meteo_file) as zf:
-                df_meteo = pd.read_csv(io.BytesIO(zf.read()))
-            # Meteo might have multiple months, so let's just aggregate or take a specific month
-            # For simplicity, if it has 'month', pivot it, or if it's already wide, just merge
-            # Let's check columns first
-            if 'harvest_year' in df_meteo.columns and 'adm_id' in df_meteo.columns:
-                # If there's a 'month' column, we need to pivot
-                if 'month' in df_meteo.columns:
-                    df_meteo = df_meteo.pivot_table(index=['adm_id', 'harvest_year'], 
-                                                    columns='month', 
-                                                    aggfunc='mean').reset_index()
-                    df_meteo.columns = [f"{col[0]}_{col[1]}" if col[1] else col[0] for col in df_meteo.columns]
-                
-                df = pd.merge(df, df_meteo, on=['adm_id', 'harvest_year'], how='left')
-                
+        # Helper function to process daily files
+        def process_daily(file_name, agg_dict):
+            if file_name not in csv_files: return None
+            with z.open(file_name) as zf:
+                df_daily = pd.read_csv(io.BytesIO(zf.read()))
+            # Convert YYYYMMDD to Year
+            df_daily['harvest_year'] = (df_daily['date'] // 10000).astype(int)
+            # Group by adm_id and harvest_year
+            df_agg = df_daily.groupby(['adm_id', 'harvest_year']).agg(agg_dict).reset_index()
+            # Flatten columns
+            df_agg.columns = [f"{c[0]}_{c[1]}" if c[1] else c[0] for c in df_agg.columns.values]
+            return df_agg
+
+        # Meteo: sum prec, mean for temperatures and others
+        meteo_agg = {
+            'prec': ['sum'],
+            'tmin': ['mean'], 'tmax': ['mean'], 'tavg': ['mean'],
+            'rad': ['mean'], 'et0': ['mean'], 'vpd': ['mean'], 'cwb': ['mean']
+        }
+        df_meteo = process_daily(f'cybench-data/maize/{country}/meteo_maize_{country}.csv', meteo_agg)
+        if df_meteo is not None:
+            df = pd.merge(df, df_meteo, on=['adm_id', 'harvest_year'], how='left')
+            
+        # NDVI: mean, max
+        df_ndvi = process_daily(f'cybench-data/maize/{country}/ndvi_maize_{country}.csv', {'ndvi': ['mean', 'max']})
+        if df_ndvi is not None:
+            df = pd.merge(df, df_ndvi, on=['adm_id', 'harvest_year'], how='left')
+            
+        # FPAR: mean, max
+        df_fpar = process_daily(f'cybench-data/maize/{country}/fpar_maize_{country}.csv', {'fpar': ['mean', 'max']})
+        if df_fpar is not None:
+            df = pd.merge(df, df_fpar, on=['adm_id', 'harvest_year'], how='left')
+
         # Merge soil if exists
+        soil_file = f'cybench-data/maize/{country}/soil_maize_{country}.csv'
         if soil_file in csv_files:
             with z.open(soil_file) as zf:
                 df_soil = pd.read_csv(io.BytesIO(zf.read()))
