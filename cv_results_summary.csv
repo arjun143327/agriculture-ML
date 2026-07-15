@@ -1,0 +1,9 @@
+Dataset,Model,Split,RMSE,R2
+CY-Bench,Random Forest,Spatial (5-Fold GKF),1.643 ± 0.161,0.536 ± 0.087
+CY-Bench,Random Forest,Temporal (Walk-Forward),1.522 ± 0.421,0.293 ± 0.861
+CY-Bench,XGBoost,Spatial (5-Fold GKF),1.757 ± 0.252,0.465 ± 0.132
+CY-Bench,XGBoost,Temporal (Walk-Forward),1.566 ± 0.409,0.280 ± 0.796
+SustainBench,Random Forest,Spatial (5-Fold GKF),0.545 ± 0.012,0.391 ± 0.029
+SustainBench,Random Forest,Temporal (Walk-Forward),0.654 ± 0.072,-0.060 ± 0.497
+SustainBench,XGBoost,Spatial (5-Fold GKF),0.561 ± 0.012,0.355 ± 0.029
+SustainBench,XGBoost,Temporal (Walk-Forward),0.658 ± 0.076,-0.071 ± 0.496
