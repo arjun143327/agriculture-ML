@@ -1,0 +1,17 @@
+Dataset,Model,Split,RMSE,R2
+CY-Bench Wheat,Null Baseline,Random,1.242 ± 0.037,-0.007 ± 0.009
+CY-Bench Wheat,Null Baseline,Spatial,1.198 ± 0.100,-0.019 ± 0.025
+CY-Bench Wheat,Null Baseline,Temporal,1.176 ± 0.164,-0.394 ± 0.410
+CY-Bench Wheat,Null Baseline,Spatiotemporal,1.398 ± 0.142,-0.484 ± 0.162
+CY-Bench Wheat,Ridge,Random,0.886 ± 0.044,0.486 ± 0.045
+CY-Bench Wheat,Ridge,Spatial,1.017 ± 0.091,0.254 ± 0.141
+CY-Bench Wheat,Ridge,Temporal,0.904 ± 0.207,0.116 ± 0.568
+CY-Bench Wheat,Ridge,Spatiotemporal,1.358 ± 0.141,-0.431 ± 0.315
+CY-Bench Wheat,Random Forest,Random,0.710 ± 0.032,0.671 ± 0.020
+CY-Bench Wheat,Random Forest,Spatial,0.977 ± 0.249,0.307 ± 0.269
+CY-Bench Wheat,Random Forest,Temporal,0.826 ± 0.133,0.267 ± 0.376
+CY-Bench Wheat,Random Forest,Spatiotemporal,1.178 ± 0.090,-0.052 ± 0.020
+CY-Bench Wheat,XGBoost,Random,0.704 ± 0.024,0.676 ± 0.019
+CY-Bench Wheat,XGBoost,Spatial,0.940 ± 0.180,0.371 ± 0.159
+CY-Bench Wheat,XGBoost,Temporal,0.832 ± 0.159,0.259 ± 0.385
+CY-Bench Wheat,XGBoost,Spatiotemporal,1.243 ± 0.097,-0.175 ± 0.088
