@@ -3,15 +3,15 @@ CY-Bench Zambia Maize,Null Baseline,Random,0.940 ± 0.061,-0.005 ± 0.004
 CY-Bench Zambia Maize,Null Baseline,Spatial,0.934 ± 0.074,-0.021 ± 0.023
 CY-Bench Zambia Maize,Null Baseline,Temporal,0.980 ± 0.154,-0.307 ± 0.252
 CY-Bench Zambia Maize,Null Baseline,Spatiotemporal,0.942 ± 0.082,-0.105 ± 0.073
-CY-Bench Zambia Maize,Ridge,Random,0.752 ± 0.072,0.358 ± 0.046
-CY-Bench Zambia Maize,Ridge,Spatial,0.771 ± 0.074,0.297 ± 0.113
-CY-Bench Zambia Maize,Ridge,Temporal,0.772 ± 0.190,0.171 ± 0.322
-CY-Bench Zambia Maize,Ridge,Spatiotemporal,0.673 ± 0.053,0.428 ± 0.096
-CY-Bench Zambia Maize,Random Forest,Random,0.682 ± 0.065,0.472 ± 0.046
-CY-Bench Zambia Maize,Random Forest,Spatial,0.768 ± 0.071,0.307 ± 0.072
-CY-Bench Zambia Maize,Random Forest,Temporal,0.720 ± 0.180,0.268 ± 0.295
-CY-Bench Zambia Maize,Random Forest,Spatiotemporal,0.705 ± 0.050,0.352 ± 0.192
-CY-Bench Zambia Maize,XGBoost,Random,0.736 ± 0.063,0.384 ± 0.052
-CY-Bench Zambia Maize,XGBoost,Spatial,0.809 ± 0.050,0.227 ± 0.080
-CY-Bench Zambia Maize,XGBoost,Temporal,0.760 ± 0.159,0.192 ± 0.281
-CY-Bench Zambia Maize,XGBoost,Spatiotemporal,0.755 ± 0.065,0.233 ± 0.319
+CY-Bench Zambia Maize,Ridge,Random,0.753 ± 0.072,0.356 ± 0.047
+CY-Bench Zambia Maize,Ridge,Spatial,0.760 ± 0.071,0.318 ± 0.094
+CY-Bench Zambia Maize,Ridge,Temporal,0.769 ± 0.191,0.180 ± 0.318
+CY-Bench Zambia Maize,Ridge,Spatiotemporal,0.676 ± 0.054,0.424 ± 0.096
+CY-Bench Zambia Maize,Random Forest,Random,0.685 ± 0.064,0.466 ± 0.049
+CY-Bench Zambia Maize,Random Forest,Spatial,0.770 ± 0.072,0.303 ± 0.083
+CY-Bench Zambia Maize,Random Forest,Temporal,0.722 ± 0.185,0.264 ± 0.302
+CY-Bench Zambia Maize,Random Forest,Spatiotemporal,0.703 ± 0.049,0.357 ± 0.186
+CY-Bench Zambia Maize,XGBoost,Random,0.711 ± 0.044,0.424 ± 0.024
+CY-Bench Zambia Maize,XGBoost,Spatial,0.806 ± 0.071,0.238 ± 0.077
+CY-Bench Zambia Maize,XGBoost,Temporal,0.770 ± 0.178,0.165 ± 0.311
+CY-Bench Zambia Maize,XGBoost,Spatiotemporal,0.740 ± 0.026,0.282 ± 0.233

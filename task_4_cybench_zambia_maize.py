@@ -46,6 +46,9 @@ def main():
     with z.open(yield_file) as zf:
         df_y = pd.read_csv(io.BytesIO(zf.read()))
     
+    # Select only needed columns from yield file (drop crop_name, use as label only)
+    df_y = df_y[['adm_id', 'harvest_year', 'yield', 'harvest_area', 'production', 'country_code']]
+    
     # Strictly enforce identical zero-yield filtering
     df_y = df_y[df_y['yield'] > 0]
 
@@ -98,8 +101,8 @@ def main():
         fpar_max=('fpar', 'max')
     ).reset_index()
 
-    # Merge exactly as before
-    df_merged = df_y.merge(df_loc, on='adm_id', how='left')
+    # Merge exactly as before — only pull lat/lon from location file
+    df_merged = df_y.merge(df_loc[['adm_id', 'latitude', 'longitude']], on='adm_id', how='left')
     df_merged = df_merged.merge(df_soil[['adm_id', 'awc', 'bulk_density', 'drainage_class']], on='adm_id', how='left')
     df_merged = df_merged.merge(agg_meteo, on=['adm_id', 'harvest_year'], how='inner')
     df_merged = df_merged.merge(agg_ndvi, on=['adm_id', 'harvest_year'], how='inner')
