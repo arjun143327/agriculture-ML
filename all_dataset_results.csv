@@ -1,0 +1,65 @@
+Dataset,Model,Split,RMSE,R2
+CY-Bench Maize (Europe),Null Baseline,Random,2.401 +/- 0.073,-0.005 +/- 0.007
+CY-Bench Maize (Europe),Null Baseline,Spatial,2.437 +/- 0.114,-0.009 +/- 0.011
+CY-Bench Maize (Europe),Null Baseline,Temporal,2.497 +/- 0.502,-0.560 +/- 1.126
+CY-Bench Maize (Europe),Null Baseline,Spatiotemporal,3.062 +/- 0.262,-0.900 +/- 0.305
+CY-Bench Maize (Europe),Ridge,Random,1.680 +/- 0.031,0.507 +/- 0.031
+CY-Bench Maize (Europe),Ridge,Spatial,1.860 +/- 0.271,0.390 +/- 0.225
+CY-Bench Maize (Europe),Ridge,Temporal,1.751 +/- 0.356,0.108 +/- 0.892
+CY-Bench Maize (Europe),Ridge,Spatiotemporal,3.018 +/- 0.417,-1.008 +/- 0.963
+CY-Bench Maize (Europe),Random Forest,Random,1.274 +/- 0.046,0.716 +/- 0.027
+CY-Bench Maize (Europe),Random Forest,Spatial,1.558 +/- 0.141,0.576 +/- 0.105
+CY-Bench Maize (Europe),Random Forest,Temporal,1.522 +/- 0.423,0.293 +/- 0.864
+CY-Bench Maize (Europe),Random Forest,Spatiotemporal,2.695 +/- 0.281,-0.550 +/- 0.557
+CY-Bench Maize (Europe),XGBoost,Random,1.253 +/- 0.023,0.725 +/- 0.025
+CY-Bench Maize (Europe),XGBoost,Spatial,1.742 +/- 0.232,0.463 +/- 0.183
+CY-Bench Maize (Europe),XGBoost,Temporal,1.521 +/- 0.417,0.306 +/- 0.761
+CY-Bench Maize (Europe),XGBoost,Spatiotemporal,2.789 +/- 0.306,-0.662 +/- 0.602
+CY-Bench Wheat (Europe),Null Baseline,Random,1.242 +/- 0.037,-0.007 +/- 0.009
+CY-Bench Wheat (Europe),Null Baseline,Spatial,1.203 +/- 0.137,-0.066 +/- 0.092
+CY-Bench Wheat (Europe),Null Baseline,Temporal,1.176 +/- 0.164,-0.394 +/- 0.410
+CY-Bench Wheat (Europe),Null Baseline,Spatiotemporal,1.357 +/- 0.072,-0.746 +/- 0.382
+CY-Bench Wheat (Europe),Ridge,Random,0.886 +/- 0.044,0.486 +/- 0.045
+CY-Bench Wheat (Europe),Ridge,Spatial,0.971 +/- 0.146,0.275 +/- 0.246
+CY-Bench Wheat (Europe),Ridge,Temporal,0.904 +/- 0.207,0.116 +/- 0.568
+CY-Bench Wheat (Europe),Ridge,Spatiotemporal,1.271 +/- 0.101,-0.552 +/- 0.411
+CY-Bench Wheat (Europe),Random Forest,Random,0.709 +/- 0.032,0.671 +/- 0.020
+CY-Bench Wheat (Europe),Random Forest,Spatial,0.877 +/- 0.147,0.434 +/- 0.104
+CY-Bench Wheat (Europe),Random Forest,Temporal,0.827 +/- 0.133,0.265 +/- 0.377
+CY-Bench Wheat (Europe),Random Forest,Spatiotemporal,1.147 +/- 0.064,-0.240 +/- 0.229
+CY-Bench Wheat (Europe),XGBoost,Random,0.701 +/- 0.020,0.678 +/- 0.020
+CY-Bench Wheat (Europe),XGBoost,Spatial,0.884 +/- 0.092,0.420 +/- 0.079
+CY-Bench Wheat (Europe),XGBoost,Temporal,0.851 +/- 0.156,0.220 +/- 0.419
+CY-Bench Wheat (Europe),XGBoost,Spatiotemporal,1.179 +/- 0.021,-0.308 +/- 0.212
+CY-Bench Maize (Zambia),Null Baseline,Random,0.940 +/- 0.061,-0.005 +/- 0.004
+CY-Bench Maize (Zambia),Null Baseline,Spatial,0.941 +/- 0.071,-0.068 +/- 0.082
+CY-Bench Maize (Zambia),Null Baseline,Temporal,0.980 +/- 0.154,-0.307 +/- 0.252
+CY-Bench Maize (Zambia),Null Baseline,Spatiotemporal,1.081 +/- 0.047,-0.261 +/- 0.206
+CY-Bench Maize (Zambia),Ridge,Random,0.753 +/- 0.072,0.356 +/- 0.047
+CY-Bench Maize (Zambia),Ridge,Spatial,0.766 +/- 0.062,0.293 +/- 0.060
+CY-Bench Maize (Zambia),Ridge,Temporal,0.769 +/- 0.191,0.180 +/- 0.318
+CY-Bench Maize (Zambia),Ridge,Spatiotemporal,0.828 +/- 0.025,0.264 +/- 0.103
+CY-Bench Maize (Zambia),Random Forest,Random,0.685 +/- 0.065,0.466 +/- 0.051
+CY-Bench Maize (Zambia),Random Forest,Spatial,0.788 +/- 0.076,0.250 +/- 0.098
+CY-Bench Maize (Zambia),Random Forest,Temporal,0.722 +/- 0.186,0.264 +/- 0.303
+CY-Bench Maize (Zambia),Random Forest,Spatiotemporal,0.801 +/- 0.052,0.308 +/- 0.114
+CY-Bench Maize (Zambia),XGBoost,Random,0.725 +/- 0.073,0.402 +/- 0.063
+CY-Bench Maize (Zambia),XGBoost,Spatial,0.831 +/- 0.087,0.171 +/- 0.056
+CY-Bench Maize (Zambia),XGBoost,Temporal,0.762 +/- 0.189,0.177 +/- 0.336
+CY-Bench Maize (Zambia),XGBoost,Spatiotemporal,0.832 +/- 0.052,0.251 +/- 0.140
+SustainBench Soybean,Null Baseline,Random,0.690 +/- 0.003,-0.000 +/- 0.000
+SustainBench Soybean,Null Baseline,Spatial,0.699 +/- 0.030,-0.001 +/- 0.001
+SustainBench Soybean,Null Baseline,Temporal,0.752 +/- 0.081,-0.384 +/- 0.578
+SustainBench Soybean,Null Baseline,Spatiotemporal,0.812 +/- 0.009,-0.691 +/- 0.153
+SustainBench Soybean,Ridge,Random,0.683 +/- 0.128,-0.014 +/- 0.398
+SustainBench Soybean,Ridge,Spatial,0.670 +/- 0.137,0.040 +/- 0.434
+SustainBench Soybean,Ridge,Temporal,0.670 +/- 0.079,-0.120 +/- 0.557
+SustainBench Soybean,Ridge,Spatiotemporal,0.761 +/- 0.010,-0.487 +/- 0.149
+SustainBench Soybean,Random Forest,Random,0.537 +/- 0.012,0.394 +/- 0.023
+SustainBench Soybean,Random Forest,Spatial,0.544 +/- 0.021,0.392 +/- 0.029
+SustainBench Soybean,Random Forest,Temporal,0.653 +/- 0.072,-0.058 +/- 0.497
+SustainBench Soybean,Random Forest,Spatiotemporal,0.742 +/- 0.016,-0.411 +/- 0.108
+SustainBench Soybean,XGBoost,Random,0.556 +/- 0.010,0.351 +/- 0.019
+SustainBench Soybean,XGBoost,Spatial,0.561 +/- 0.020,0.356 +/- 0.016
+SustainBench Soybean,XGBoost,Temporal,0.668 +/- 0.082,-0.111 +/- 0.548
+SustainBench Soybean,XGBoost,Spatiotemporal,0.747 +/- 0.015,-0.433 +/- 0.129

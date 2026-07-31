@@ -1,0 +1,5 @@
+Dataset,Regions,YearRange,ValidRecords,PredictorCount,Predictors,TargetMean,TargetSD,TargetMin,TargetMax
+CY-Bench Maize (Europe),79,2001-2020,1543,15,"prec_sum, tmin_mean, tmax_mean, tavg_mean, rad_mean, et0_mean, vpd_mean, cwb_mean, ndvi_mean, ndvi_max, fpar_mean, fpar_max, awc, bulk_de...",5.327,2.434,0.233,12.966
+CY-Bench Wheat (Europe),76,2001-2020,951,15,"prec_sum, tmin_mean, tmax_mean, tavg_mean, rad_mean, et0_mean, vpd_mean, cwb_mean, ndvi_mean, ndvi_max, fpar_mean, fpar_max, awc, bulk_de...",4.143,1.198,0.403,8.14
+CY-Bench Maize (Zambia),71,2001-2017,1207,15,"awc, bulk_density, drainage_class, prec_sum, tmin_mean, tmax_mean, tavg_mean, rad_mean, et0_mean, vpd_mean, cwb_mean, ndvi_mean, ndvi_max...",1.787,0.934,0.009,7.919
+SustainBench Soybean,538,2005-2016,5792,27,"band_0_mean, band_1_mean, band_2_mean, band_3_mean, band_4_mean, band_5_mean, band_6_mean, band_7_mean, band_8_mean, band_0_std, band_1_s...",2.97,0.7,0.599,4.795
