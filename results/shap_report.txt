@@ -1,0 +1,155 @@
+SHAP ANALYSIS REPORT
+================================================================================
+
+--- STATIC SOIL VARIABLE SHARE (SHAP) ---
+CY-Bench Maize (Europe) | Random : 26.06%
+CY-Bench Maize (Europe) | Spatial : 21.73%
+CY-Bench Wheat (Europe) | Random : 25.15%
+CY-Bench Wheat (Europe) | Spatial : 24.24%
+CY-Bench Maize (Zambia) | Random : 15.63%
+CY-Bench Maize (Zambia) | Spatial : 20.20%
+
+--- MEANINGFUL RANK DIFFERENCES (SHAP vs GAIN) ---
+
+Differences in CY-Bench Maize (Europe) | Random:
+  prec_sum: SHAP Rank 10 vs Gain Rank 15
+  tmax_mean: SHAP Rank 7 vs Gain Rank 11
+  vpd_mean: SHAP Rank 5 vs Gain Rank 8
+  ndvi_mean: SHAP Rank 9 vs Gain Rank 6
+  awc: SHAP Rank 6 vs Gain Rank 3
+  drainage_class: SHAP Rank 15 vs Gain Rank 9
+
+Differences in CY-Bench Maize (Europe) | Spatial:
+  tmax_mean: SHAP Rank 4 vs Gain Rank 10
+  rad_mean: SHAP Rank 5 vs Gain Rank 6
+  vpd_mean: SHAP Rank 6 vs Gain Rank 9
+  awc: SHAP Rank 9 vs Gain Rank 4
+  drainage_class: SHAP Rank 11 vs Gain Rank 3
+
+Differences in CY-Bench Wheat (Europe) | Random:
+  prec_sum: SHAP Rank 12 vs Gain Rank 15
+  tmax_mean: SHAP Rank 7 vs Gain Rank 11
+  tavg_mean: SHAP Rank 14 vs Gain Rank 6
+  rad_mean: SHAP Rank 5 vs Gain Rank 10
+  cwb_mean: SHAP Rank 13 vs Gain Rank 7
+  ndvi_mean: SHAP Rank 9 vs Gain Rank 14
+  drainage_class: SHAP Rank 6 vs Gain Rank 1
+
+Differences in CY-Bench Wheat (Europe) | Spatial:
+  prec_sum: SHAP Rank 8 vs Gain Rank 15
+  tmin_mean: SHAP Rank 5 vs Gain Rank 11
+  tmax_mean: SHAP Rank 4 vs Gain Rank 12
+  tavg_mean: SHAP Rank 14 vs Gain Rank 8
+  cwb_mean: SHAP Rank 15 vs Gain Rank 9
+  awc: SHAP Rank 6 vs Gain Rank 4
+  drainage_class: SHAP Rank 12 vs Gain Rank 3
+
+Differences in CY-Bench Maize (Zambia) | Random:
+  cwb_mean: SHAP Rank 6 vs Gain Rank 3
+  ndvi_mean: SHAP Rank 9 vs Gain Rank 6
+  fpar_mean: SHAP Rank 14 vs Gain Rank 11
+  fpar_max: SHAP Rank 5 vs Gain Rank 7
+
+Differences in CY-Bench Maize (Zambia) | Spatial:
+  prec_sum: SHAP Rank 10 vs Gain Rank 14
+  tmin_mean: SHAP Rank 6 vs Gain Rank 10
+  tavg_mean: SHAP Rank 7 vs Gain Rank 3
+  et0_mean: SHAP Rank 12 vs Gain Rank 9
+  ndvi_mean: SHAP Rank 11 vs Gain Rank 7
+  ndvi_max: SHAP Rank 9 vs Gain Rank 13
+  fpar_mean: SHAP Rank 14 vs Gain Rank 11
+  fpar_max: SHAP Rank 4 vs Gain Rank 8
+
+--- RAW TABLE ---
+| Dataset | Split | Feature | SHAP_mean | SHAP_SD | Gain_Importance |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| CY-Bench Maize (Europe) | Random | fpar_mean | 0.7483 | 0.0929 | 0.3398 |
+| CY-Bench Maize (Europe) | Random | bulk_density | 0.6286 | 0.0397 | 0.1876 |
+| CY-Bench Maize (Europe) | Random | fpar_max | 0.3985 | 0.0234 | 0.0601 |
+| CY-Bench Maize (Europe) | Random | rad_mean | 0.2862 | 0.0702 | 0.0629 |
+| CY-Bench Maize (Europe) | Random | vpd_mean | 0.2353 | 0.0278 | 0.0322 |
+| CY-Bench Maize (Europe) | Random | awc | 0.2147 | 0.0082 | 0.0931 |
+| CY-Bench Maize (Europe) | Random | tmax_mean | 0.1968 | 0.0357 | 0.0246 |
+| CY-Bench Maize (Europe) | Random | et0_mean | 0.1532 | 0.0115 | 0.0376 |
+| CY-Bench Maize (Europe) | Random | ndvi_mean | 0.1442 | 0.0396 | 0.0404 |
+| CY-Bench Maize (Europe) | Random | prec_sum | 0.0957 | 0.0108 | 0.0103 |
+| CY-Bench Maize (Europe) | Random | tmin_mean | 0.0937 | 0.0088 | 0.0188 |
+| CY-Bench Maize (Europe) | Random | tavg_mean | 0.0668 | 0.0037 | 0.0281 |
+| CY-Bench Maize (Europe) | Random | ndvi_max | 0.0644 | 0.0079 | 0.0146 |
+| CY-Bench Maize (Europe) | Random | cwb_mean | 0.0628 | 0.0122 | 0.0179 |
+| CY-Bench Maize (Europe) | Random | drainage_class | 0.0542 | 0.0321 | 0.0319 |
+| CY-Bench Maize (Europe) | Spatial | fpar_mean | 0.6904 | 0.0389 | 0.3049 |
+| CY-Bench Maize (Europe) | Spatial | bulk_density | 0.4820 | 0.0778 | 0.1894 |
+| CY-Bench Maize (Europe) | Spatial | fpar_max | 0.4164 | 0.0242 | 0.0609 |
+| CY-Bench Maize (Europe) | Spatial | tmax_mean | 0.2364 | 0.0185 | 0.0317 |
+| CY-Bench Maize (Europe) | Spatial | rad_mean | 0.2357 | 0.0692 | 0.0549 |
+| CY-Bench Maize (Europe) | Spatial | vpd_mean | 0.2207 | 0.0243 | 0.0333 |
+| CY-Bench Maize (Europe) | Spatial | et0_mean | 0.1724 | 0.0404 | 0.0423 |
+| CY-Bench Maize (Europe) | Spatial | ndvi_mean | 0.1460 | 0.0734 | 0.0386 |
+| CY-Bench Maize (Europe) | Spatial | awc | 0.1419 | 0.0213 | 0.0625 |
+| CY-Bench Maize (Europe) | Spatial | tmin_mean | 0.1391 | 0.0316 | 0.0179 |
+| CY-Bench Maize (Europe) | Spatial | drainage_class | 0.0824 | 0.0045 | 0.1034 |
+| CY-Bench Maize (Europe) | Spatial | ndvi_max | 0.0801 | 0.0070 | 0.0140 |
+| CY-Bench Maize (Europe) | Spatial | tavg_mean | 0.0787 | 0.0059 | 0.0242 |
+| CY-Bench Maize (Europe) | Spatial | prec_sum | 0.0678 | 0.0050 | 0.0073 |
+| CY-Bench Maize (Europe) | Spatial | cwb_mean | 0.0605 | 0.0041 | 0.0146 |
+| CY-Bench Wheat (Europe) | Random | fpar_mean | 0.4777 | 0.0259 | 0.2353 |
+| CY-Bench Wheat (Europe) | Random | bulk_density | 0.2267 | 0.0134 | 0.1491 |
+| CY-Bench Wheat (Europe) | Random | fpar_max | 0.1741 | 0.0218 | 0.0406 |
+| CY-Bench Wheat (Europe) | Random | awc | 0.1064 | 0.0121 | 0.0676 |
+| CY-Bench Wheat (Europe) | Random | rad_mean | 0.0919 | 0.0106 | 0.0261 |
+| CY-Bench Wheat (Europe) | Random | drainage_class | 0.0881 | 0.0251 | 0.2807 |
+| CY-Bench Wheat (Europe) | Random | tmax_mean | 0.0830 | 0.0115 | 0.0196 |
+| CY-Bench Wheat (Europe) | Random | tmin_mean | 0.0759 | 0.0034 | 0.0267 |
+| CY-Bench Wheat (Europe) | Random | ndvi_mean | 0.0598 | 0.0049 | 0.0164 |
+| CY-Bench Wheat (Europe) | Random | et0_mean | 0.0537 | 0.0053 | 0.0279 |
+| CY-Bench Wheat (Europe) | Random | ndvi_max | 0.0530 | 0.0059 | 0.0185 |
+| CY-Bench Wheat (Europe) | Random | prec_sum | 0.0513 | 0.0034 | 0.0091 |
+| CY-Bench Wheat (Europe) | Random | cwb_mean | 0.0481 | 0.0056 | 0.0312 |
+| CY-Bench Wheat (Europe) | Random | tavg_mean | 0.0476 | 0.0035 | 0.0347 |
+| CY-Bench Wheat (Europe) | Random | vpd_mean | 0.0381 | 0.0020 | 0.0164 |
+| CY-Bench Wheat (Europe) | Spatial | fpar_mean | 0.4802 | 0.0164 | 0.2807 |
+| CY-Bench Wheat (Europe) | Spatial | bulk_density | 0.2812 | 0.0502 | 0.1768 |
+| CY-Bench Wheat (Europe) | Spatial | fpar_max | 0.1881 | 0.0387 | 0.0656 |
+| CY-Bench Wheat (Europe) | Spatial | tmax_mean | 0.1034 | 0.0154 | 0.0276 |
+| CY-Bench Wheat (Europe) | Spatial | tmin_mean | 0.0852 | 0.0127 | 0.0300 |
+| CY-Bench Wheat (Europe) | Spatial | awc | 0.0849 | 0.0167 | 0.0835 |
+| CY-Bench Wheat (Europe) | Spatial | rad_mean | 0.0833 | 0.0212 | 0.0444 |
+| CY-Bench Wheat (Europe) | Spatial | prec_sum | 0.0666 | 0.0192 | 0.0124 |
+| CY-Bench Wheat (Europe) | Spatial | vpd_mean | 0.0647 | 0.0275 | 0.0401 |
+| CY-Bench Wheat (Europe) | Spatial | ndvi_mean | 0.0614 | 0.0135 | 0.0311 |
+| CY-Bench Wheat (Europe) | Spatial | et0_mean | 0.0603 | 0.0114 | 0.0266 |
+| CY-Bench Wheat (Europe) | Spatial | drainage_class | 0.0600 | 0.0495 | 0.0864 |
+| CY-Bench Wheat (Europe) | Spatial | ndvi_max | 0.0593 | 0.0065 | 0.0250 |
+| CY-Bench Wheat (Europe) | Spatial | tavg_mean | 0.0408 | 0.0083 | 0.0378 |
+| CY-Bench Wheat (Europe) | Spatial | cwb_mean | 0.0384 | 0.0081 | 0.0320 |
+| CY-Bench Maize (Zambia) | Random | tavg_mean | 0.1891 | 0.0310 | 0.2450 |
+| CY-Bench Maize (Zambia) | Random | vpd_mean | 0.1494 | 0.0442 | 0.1400 |
+| CY-Bench Maize (Zambia) | Random | bulk_density | 0.1134 | 0.0204 | 0.0643 |
+| CY-Bench Maize (Zambia) | Random | tmax_mean | 0.1060 | 0.0121 | 0.0671 |
+| CY-Bench Maize (Zambia) | Random | fpar_max | 0.1028 | 0.0052 | 0.0574 |
+| CY-Bench Maize (Zambia) | Random | cwb_mean | 0.0838 | 0.0166 | 0.0864 |
+| CY-Bench Maize (Zambia) | Random | awc | 0.0792 | 0.0077 | 0.0483 |
+| CY-Bench Maize (Zambia) | Random | tmin_mean | 0.0764 | 0.0134 | 0.0513 |
+| CY-Bench Maize (Zambia) | Random | ndvi_mean | 0.0678 | 0.0160 | 0.0614 |
+| CY-Bench Maize (Zambia) | Random | rad_mean | 0.0582 | 0.0094 | 0.0379 |
+| CY-Bench Maize (Zambia) | Random | ndvi_max | 0.0546 | 0.0059 | 0.0429 |
+| CY-Bench Maize (Zambia) | Random | prec_sum | 0.0536 | 0.0077 | 0.0214 |
+| CY-Bench Maize (Zambia) | Random | et0_mean | 0.0522 | 0.0152 | 0.0372 |
+| CY-Bench Maize (Zambia) | Random | fpar_mean | 0.0462 | 0.0034 | 0.0387 |
+| CY-Bench Maize (Zambia) | Random | drainage_class | 0.0001 | 0.0001 | 0.0008 |
+| CY-Bench Maize (Zambia) | Spatial | vpd_mean | 0.1552 | 0.0097 | 0.1410 |
+| CY-Bench Maize (Zambia) | Spatial | tmax_mean | 0.1470 | 0.0216 | 0.2112 |
+| CY-Bench Maize (Zambia) | Spatial | bulk_density | 0.1380 | 0.0445 | 0.0807 |
+| CY-Bench Maize (Zambia) | Spatial | fpar_max | 0.0968 | 0.0077 | 0.0575 |
+| CY-Bench Maize (Zambia) | Spatial | awc | 0.0930 | 0.0250 | 0.0601 |
+| CY-Bench Maize (Zambia) | Spatial | tmin_mean | 0.0766 | 0.0176 | 0.0457 |
+| CY-Bench Maize (Zambia) | Spatial | tavg_mean | 0.0659 | 0.0173 | 0.0845 |
+| CY-Bench Maize (Zambia) | Spatial | cwb_mean | 0.0636 | 0.0115 | 0.0596 |
+| CY-Bench Maize (Zambia) | Spatial | ndvi_max | 0.0612 | 0.0173 | 0.0400 |
+| CY-Bench Maize (Zambia) | Spatial | prec_sum | 0.0520 | 0.0109 | 0.0230 |
+| CY-Bench Maize (Zambia) | Spatial | ndvi_mean | 0.0520 | 0.0025 | 0.0585 |
+| CY-Bench Maize (Zambia) | Spatial | et0_mean | 0.0506 | 0.0130 | 0.0477 |
+| CY-Bench Maize (Zambia) | Spatial | rad_mean | 0.0496 | 0.0069 | 0.0434 |
+| CY-Bench Maize (Zambia) | Spatial | fpar_mean | 0.0427 | 0.0039 | 0.0436 |
+| CY-Bench Maize (Zambia) | Spatial | drainage_class | 0.0003 | 0.0002 | 0.0035 |

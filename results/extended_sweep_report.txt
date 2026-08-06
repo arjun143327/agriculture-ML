@@ -1,0 +1,121 @@
+| Dataset | Win Length | Window | Anomaly? | Ridge R2 | RF R2 | XGBoost R2 |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| CY-Bench Maize (Europe) | 2 | 2006-2007 | No | 0.445 | 0.454 | 0.379 |
+| CY-Bench Maize (Europe) | 2 | 2007-2008 | No | 0.505 | 0.535 | 0.534 |
+| CY-Bench Maize (Europe) | 2 | 2008-2009 | No | 0.571 | 0.601 | 0.531 |
+| CY-Bench Maize (Europe) | 2 | 2009-2010 | No | 0.344 | 0.467 | 0.450 |
+| CY-Bench Maize (Europe) | 2 | 2010-2011 | No | 0.299 | 0.376 | 0.333 |
+| CY-Bench Maize (Europe) | 2 | 2011-2012 | No | 0.653 | 0.600 | 0.526 |
+| CY-Bench Maize (Europe) | 2 | 2012-2013 | No | 0.506 | 0.476 | 0.500 |
+| CY-Bench Maize (Europe) | 2 | 2013-2014 | No | 0.255 | 0.340 | 0.165 |
+| CY-Bench Maize (Europe) | 2 | 2014-2015 | No | 0.285 | 0.458 | 0.327 |
+| CY-Bench Maize (Europe) | 2 | 2015-2016 | No | 0.356 | 0.357 | 0.254 |
+| CY-Bench Maize (Europe) | 2 | 2016-2017 | No | 0.300 | 0.238 | 0.103 |
+| CY-Bench Maize (Europe) | 2 | 2017-2018 | Yes | -0.588 | -0.215 | -0.243 |
+| CY-Bench Maize (Europe) | 2 | 2018-2019 | Yes | -0.970 | -0.977 | -1.300 |
+| CY-Bench Maize (Europe) | 2 | 2019-2020 | No | 0.350 | 0.272 | 0.235 |
+| CY-Bench Maize (Europe) | 3 | 2006-2008 | No | 0.495 | 0.520 | 0.458 |
+| CY-Bench Maize (Europe) | 3 | 2007-2009 | No | 0.521 | 0.542 | 0.457 |
+| CY-Bench Maize (Europe) | 3 | 2008-2010 | No | 0.452 | 0.554 | 0.410 |
+| CY-Bench Maize (Europe) | 3 | 2009-2011 | No | 0.415 | 0.462 | 0.358 |
+| CY-Bench Maize (Europe) | 3 | 2010-2012 | No | 0.523 | 0.526 | 0.487 |
+| CY-Bench Maize (Europe) | 3 | 2011-2013 | No | 0.540 | 0.546 | 0.463 |
+| CY-Bench Maize (Europe) | 3 | 2012-2014 | No | 0.520 | 0.540 | 0.499 |
+| CY-Bench Maize (Europe) | 3 | 2013-2015 | No | 0.143 | 0.379 | 0.296 |
+| CY-Bench Maize (Europe) | 3 | 2014-2016 | No | 0.367 | 0.327 | 0.198 |
+| CY-Bench Maize (Europe) | 3 | 2015-2017 | No | 0.305 | 0.343 | 0.269 |
+| CY-Bench Maize (Europe) | 3 | 2016-2018 | Yes | 0.013 | 0.142 | -0.030 |
+| CY-Bench Maize (Europe) | 3 | 2017-2019 | Yes | -0.816 | -0.515 | -0.693 |
+| CY-Bench Maize (Europe) | 3 | 2018-2020 | Yes | -0.123 | -0.096 | -0.287 |
+| CY-Bench Maize (Europe) | 5 | 2006-2010 | No | 0.471 | 0.515 | 0.416 |
+| CY-Bench Maize (Europe) | 5 | 2007-2011 | No | 0.498 | 0.502 | 0.473 |
+| CY-Bench Maize (Europe) | 5 | 2008-2012 | No | 0.550 | 0.555 | 0.479 |
+| CY-Bench Maize (Europe) | 5 | 2009-2013 | No | 0.468 | 0.495 | 0.456 |
+| CY-Bench Maize (Europe) | 5 | 2010-2014 | No | 0.427 | 0.465 | 0.372 |
+| CY-Bench Maize (Europe) | 5 | 2011-2015 | No | 0.426 | 0.519 | 0.433 |
+| CY-Bench Maize (Europe) | 5 | 2012-2016 | No | 0.421 | 0.436 | 0.322 |
+| CY-Bench Maize (Europe) | 5 | 2013-2017 | No | 0.242 | 0.313 | 0.163 |
+| CY-Bench Maize (Europe) | 5 | 2014-2018 | Yes | 0.256 | 0.327 | 0.278 |
+| CY-Bench Maize (Europe) | 5 | 2015-2019 | Yes | 0.050 | 0.164 | 0.111 |
+| CY-Bench Maize (Europe) | 5 | 2016-2020 | Yes | -0.219 | -0.042 | -0.166 |
+| CY-Bench Maize (Zambia) | 2 | 2006-2007 | No | 0.249 | 0.161 | 0.049 |
+| CY-Bench Maize (Zambia) | 2 | 2007-2008 | No | -0.262 | -0.374 | -0.873 |
+| CY-Bench Maize (Zambia) | 2 | 2008-2009 | No | -0.315 | -0.587 | -0.910 |
+| CY-Bench Maize (Zambia) | 2 | 2009-2010 | No | 0.276 | 0.162 | -0.102 |
+| CY-Bench Maize (Zambia) | 2 | 2010-2011 | No | 0.154 | 0.181 | -0.032 |
+| CY-Bench Maize (Zambia) | 2 | 2011-2012 | Yes | 0.068 | 0.043 | -0.088 |
+| CY-Bench Maize (Zambia) | 2 | 2012-2013 | Yes | 0.259 | 0.147 | 0.112 |
+| CY-Bench Maize (Zambia) | 2 | 2013-2014 | Yes | 0.075 | 0.011 | -0.097 |
+| CY-Bench Maize (Zambia) | 2 | 2014-2015 | Yes | 0.253 | 0.231 | 0.145 |
+| CY-Bench Maize (Zambia) | 2 | 2015-2016 | No | 0.471 | 0.481 | 0.401 |
+| CY-Bench Maize (Zambia) | 2 | 2016-2017 | No | 0.382 | 0.190 | 0.099 |
+| CY-Bench Maize (Zambia) | 3 | 2006-2008 | No | -0.005 | -0.065 | -0.262 |
+| CY-Bench Maize (Zambia) | 3 | 2007-2009 | No | -0.224 | -0.290 | -0.634 |
+| CY-Bench Maize (Zambia) | 3 | 2008-2010 | No | 0.131 | 0.004 | -0.246 |
+| CY-Bench Maize (Zambia) | 3 | 2009-2011 | No | 0.265 | 0.246 | 0.135 |
+| CY-Bench Maize (Zambia) | 3 | 2010-2012 | Yes | 0.051 | 0.063 | -0.073 |
+| CY-Bench Maize (Zambia) | 3 | 2011-2013 | Yes | 0.141 | 0.138 | 0.054 |
+| CY-Bench Maize (Zambia) | 3 | 2012-2014 | Yes | 0.031 | -0.092 | -0.161 |
+| CY-Bench Maize (Zambia) | 3 | 2013-2015 | Yes | 0.262 | 0.221 | 0.111 |
+| CY-Bench Maize (Zambia) | 3 | 2014-2016 | Yes | 0.200 | 0.262 | 0.255 |
+| CY-Bench Maize (Zambia) | 3 | 2015-2017 | No | 0.424 | 0.357 | 0.282 |
+| CY-Bench Maize (Zambia) | 5 | 2006-2010 | No | 0.093 | 0.077 | -0.158 |
+| CY-Bench Maize (Zambia) | 5 | 2007-2011 | No | 0.168 | 0.112 | -0.118 |
+| CY-Bench Maize (Zambia) | 5 | 2008-2012 | Yes | 0.200 | 0.171 | 0.058 |
+| CY-Bench Maize (Zambia) | 5 | 2009-2013 | Yes | 0.170 | 0.130 | -0.050 |
+| CY-Bench Maize (Zambia) | 5 | 2010-2014 | Yes | -0.047 | -0.083 | -0.170 |
+| CY-Bench Maize (Zambia) | 5 | 2011-2015 | Yes | 0.039 | 0.099 | -0.008 |
+| CY-Bench Maize (Zambia) | 5 | 2012-2016 | Yes | 0.022 | 0.021 | 0.073 |
+| CY-Bench Maize (Zambia) | 5 | 2013-2017 | Yes | 0.089 | 0.105 | -0.076 |
+| CY-Bench Wheat (Europe) | 2 | 2006-2007 | No | 0.389 | 0.216 | 0.123 |
+| CY-Bench Wheat (Europe) | 2 | 2007-2008 | No | 0.299 | -0.179 | -0.405 |
+| CY-Bench Wheat (Europe) | 2 | 2008-2009 | No | 0.352 | 0.241 | 0.083 |
+| CY-Bench Wheat (Europe) | 2 | 2009-2010 | No | -0.057 | -0.010 | 0.173 |
+| CY-Bench Wheat (Europe) | 2 | 2010-2011 | No | 0.099 | 0.113 | 0.165 |
+| CY-Bench Wheat (Europe) | 2 | 2011-2012 | No | 0.396 | 0.148 | 0.079 |
+| CY-Bench Wheat (Europe) | 2 | 2012-2013 | No | 0.321 | 0.279 | 0.235 |
+| CY-Bench Wheat (Europe) | 2 | 2013-2014 | No | 0.271 | 0.246 | 0.191 |
+| CY-Bench Wheat (Europe) | 2 | 2014-2015 | No | 0.422 | 0.232 | 0.385 |
+| CY-Bench Wheat (Europe) | 2 | 2015-2016 | No | 0.523 | 0.333 | 0.151 |
+| CY-Bench Wheat (Europe) | 2 | 2016-2017 | Yes | -0.168 | 0.054 | -0.097 |
+| CY-Bench Wheat (Europe) | 2 | 2017-2018 | Yes | -1.946 | -0.916 | -1.274 |
+| CY-Bench Wheat (Europe) | 2 | 2018-2019 | No | -1.216 | -1.046 | -1.224 |
+| CY-Bench Wheat (Europe) | 2 | 2019-2020 | No | 0.282 | 0.253 | 0.269 |
+| CY-Bench Wheat (Europe) | 3 | 2006-2008 | No | 0.416 | 0.154 | 0.166 |
+| CY-Bench Wheat (Europe) | 3 | 2007-2009 | No | 0.342 | 0.093 | -0.072 |
+| CY-Bench Wheat (Europe) | 3 | 2008-2010 | No | 0.133 | 0.198 | 0.180 |
+| CY-Bench Wheat (Europe) | 3 | 2009-2011 | No | 0.166 | 0.182 | 0.137 |
+| CY-Bench Wheat (Europe) | 3 | 2010-2012 | No | 0.226 | 0.184 | 0.154 |
+| CY-Bench Wheat (Europe) | 3 | 2011-2013 | No | 0.340 | 0.178 | 0.072 |
+| CY-Bench Wheat (Europe) | 3 | 2012-2014 | No | 0.324 | 0.253 | 0.324 |
+| CY-Bench Wheat (Europe) | 3 | 2013-2015 | No | 0.365 | 0.273 | 0.266 |
+| CY-Bench Wheat (Europe) | 3 | 2014-2016 | No | 0.454 | 0.272 | 0.244 |
+| CY-Bench Wheat (Europe) | 3 | 2015-2017 | Yes | 0.085 | 0.172 | 0.055 |
+| CY-Bench Wheat (Europe) | 3 | 2016-2018 | Yes | -0.618 | -0.145 | -0.459 |
+| CY-Bench Wheat (Europe) | 3 | 2017-2019 | Yes | -1.756 | -1.049 | -1.278 |
+| CY-Bench Wheat (Europe) | 3 | 2018-2020 | No | -0.027 | 0.072 | -0.090 |
+| CY-Bench Wheat (Europe) | 5 | 2006-2010 | No | 0.215 | 0.163 | 0.060 |
+| CY-Bench Wheat (Europe) | 5 | 2007-2011 | No | 0.251 | 0.110 | 0.145 |
+| CY-Bench Wheat (Europe) | 5 | 2008-2012 | No | 0.289 | 0.176 | 0.182 |
+| CY-Bench Wheat (Europe) | 5 | 2009-2013 | No | 0.234 | 0.176 | 0.215 |
+| CY-Bench Wheat (Europe) | 5 | 2010-2014 | No | 0.146 | 0.196 | 0.181 |
+| CY-Bench Wheat (Europe) | 5 | 2011-2015 | No | 0.377 | 0.243 | 0.152 |
+| CY-Bench Wheat (Europe) | 5 | 2012-2016 | No | 0.449 | 0.356 | 0.232 |
+| CY-Bench Wheat (Europe) | 5 | 2013-2017 | Yes | 0.203 | 0.274 | 0.118 |
+| CY-Bench Wheat (Europe) | 5 | 2014-2018 | Yes | -0.072 | 0.087 | -0.144 |
+| CY-Bench Wheat (Europe) | 5 | 2015-2019 | Yes | -0.503 | -0.262 | -0.368 |
+| CY-Bench Wheat (Europe) | 5 | 2016-2020 | Yes | -0.293 | -0.011 | -0.169 |
+| SustainBench Soybean | 2 | 2010-2011 | No | 0.222 | 0.212 | 0.139 |
+| SustainBench Soybean | 2 | 2011-2012 | No | 0.048 | 0.191 | 0.156 |
+| SustainBench Soybean | 2 | 2012-2013 | No | 0.092 | 0.177 | 0.126 |
+| SustainBench Soybean | 2 | 2013-2014 | Yes | 0.272 | 0.199 | 0.131 |
+| SustainBench Soybean | 2 | 2014-2015 | Yes | 0.235 | 0.225 | 0.282 |
+| SustainBench Soybean | 2 | 2015-2016 | Yes | -0.599 | -0.561 | -0.613 |
+| SustainBench Soybean | 3 | 2010-2012 | No | 0.074 | 0.167 | 0.120 |
+| SustainBench Soybean | 3 | 2011-2013 | No | 0.105 | 0.193 | 0.118 |
+| SustainBench Soybean | 3 | 2012-2014 | Yes | 0.274 | 0.307 | 0.209 |
+| SustainBench Soybean | 3 | 2013-2015 | Yes | 0.208 | 0.175 | 0.110 |
+| SustainBench Soybean | 3 | 2014-2016 | Yes | -0.326 | -0.324 | -0.335 |
+| SustainBench Soybean | 5 | 2010-2014 | Yes | 0.192 | 0.228 | 0.147 |
+| SustainBench Soybean | 5 | 2011-2015 | Yes | 0.234 | 0.251 | 0.174 |
+| SustainBench Soybean | 5 | 2012-2016 | Yes | 0.045 | 0.025 | -0.020 |

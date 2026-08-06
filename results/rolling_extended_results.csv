@@ -1,0 +1,358 @@
+dataset,window_length,window_label,model,r2_mean,has_anomaly
+CY-Bench Maize (Europe),3,2006-2008,Random Forest,0.5196673347848652,False
+CY-Bench Maize (Europe),3,2006-2008,Ridge,0.4945993387067758,False
+CY-Bench Maize (Europe),3,2006-2008,XGBoost,0.4581653160303542,False
+CY-Bench Maize (Europe),3,2007-2009,Random Forest,0.5420965898010297,False
+CY-Bench Maize (Europe),3,2007-2009,Ridge,0.5212599515450909,False
+CY-Bench Maize (Europe),3,2007-2009,XGBoost,0.4568344149875276,False
+CY-Bench Maize (Europe),3,2008-2010,Random Forest,0.5539538235586451,False
+CY-Bench Maize (Europe),3,2008-2010,Ridge,0.4518644492306755,False
+CY-Bench Maize (Europe),3,2008-2010,XGBoost,0.4103055342397725,False
+CY-Bench Maize (Europe),3,2009-2011,Random Forest,0.4621070470496525,False
+CY-Bench Maize (Europe),3,2009-2011,Ridge,0.4154839866560073,False
+CY-Bench Maize (Europe),3,2009-2011,XGBoost,0.3582488640510649,False
+CY-Bench Maize (Europe),3,2010-2012,Random Forest,0.525599236874744,False
+CY-Bench Maize (Europe),3,2010-2012,Ridge,0.5233145776994156,False
+CY-Bench Maize (Europe),3,2010-2012,XGBoost,0.4865988081568293,False
+CY-Bench Maize (Europe),3,2011-2013,Random Forest,0.5456127760460633,False
+CY-Bench Maize (Europe),3,2011-2013,Ridge,0.5401732624586316,False
+CY-Bench Maize (Europe),3,2011-2013,XGBoost,0.4631613309665141,False
+CY-Bench Maize (Europe),3,2012-2014,Random Forest,0.5401039929334541,False
+CY-Bench Maize (Europe),3,2012-2014,Ridge,0.5196375907078582,False
+CY-Bench Maize (Europe),3,2012-2014,XGBoost,0.4986854664103968,False
+CY-Bench Maize (Europe),3,2013-2015,Random Forest,0.3794832665574812,False
+CY-Bench Maize (Europe),3,2013-2015,Ridge,0.1427806703364505,False
+CY-Bench Maize (Europe),3,2013-2015,XGBoost,0.2960626118165491,False
+CY-Bench Maize (Europe),3,2014-2016,Random Forest,0.3268540257397163,False
+CY-Bench Maize (Europe),3,2014-2016,Ridge,0.3671246181660381,False
+CY-Bench Maize (Europe),3,2014-2016,XGBoost,0.1984847935471037,False
+CY-Bench Maize (Europe),3,2015-2017,Random Forest,0.3432385887442304,False
+CY-Bench Maize (Europe),3,2015-2017,Ridge,0.3049437368818483,False
+CY-Bench Maize (Europe),3,2015-2017,XGBoost,0.2689375660610492,False
+CY-Bench Maize (Europe),3,2016-2018,Random Forest,0.1419727489494702,True
+CY-Bench Maize (Europe),3,2016-2018,Ridge,0.0130103151980568,True
+CY-Bench Maize (Europe),3,2016-2018,XGBoost,-0.0295329249938562,True
+CY-Bench Maize (Europe),3,2017-2019,Random Forest,-0.5150849689528595,True
+CY-Bench Maize (Europe),3,2017-2019,Ridge,-0.8159668386727823,True
+CY-Bench Maize (Europe),3,2017-2019,XGBoost,-0.6932846769188482,True
+CY-Bench Maize (Europe),3,2018-2020,Random Forest,-0.096258277460128,True
+CY-Bench Maize (Europe),3,2018-2020,Ridge,-0.1231718858587592,True
+CY-Bench Maize (Europe),3,2018-2020,XGBoost,-0.2870811889480745,True
+CY-Bench Maize (Europe),2,2006-2007,Random Forest,0.4537294122572424,False
+CY-Bench Maize (Europe),2,2006-2007,Ridge,0.4445464232602114,False
+CY-Bench Maize (Europe),2,2006-2007,XGBoost,0.3791665925064563,False
+CY-Bench Maize (Europe),2,2007-2008,Random Forest,0.5347734761972467,False
+CY-Bench Maize (Europe),2,2007-2008,Ridge,0.5049151253489687,False
+CY-Bench Maize (Europe),2,2007-2008,XGBoost,0.534215547830401,False
+CY-Bench Maize (Europe),2,2008-2009,Random Forest,0.6009792662812881,False
+CY-Bench Maize (Europe),2,2008-2009,Ridge,0.571057433563057,False
+CY-Bench Maize (Europe),2,2008-2009,XGBoost,0.5312140617542097,False
+CY-Bench Maize (Europe),2,2009-2010,Random Forest,0.4668165897777434,False
+CY-Bench Maize (Europe),2,2009-2010,Ridge,0.34448320275790034,False
+CY-Bench Maize (Europe),2,2009-2010,XGBoost,0.44952860595609795,False
+CY-Bench Maize (Europe),2,2010-2011,Random Forest,0.37632514124910893,False
+CY-Bench Maize (Europe),2,2010-2011,Ridge,0.29897325961070664,False
+CY-Bench Maize (Europe),2,2010-2011,XGBoost,0.33320980286150403,False
+CY-Bench Maize (Europe),2,2011-2012,Random Forest,0.5998080770859244,False
+CY-Bench Maize (Europe),2,2011-2012,Ridge,0.652512627746507,False
+CY-Bench Maize (Europe),2,2011-2012,XGBoost,0.5260783327629036,False
+CY-Bench Maize (Europe),2,2012-2013,Random Forest,0.47609884813082487,False
+CY-Bench Maize (Europe),2,2012-2013,Ridge,0.5055793504793002,False
+CY-Bench Maize (Europe),2,2012-2013,XGBoost,0.49971993372859774,False
+CY-Bench Maize (Europe),2,2013-2014,Random Forest,0.3402700745843789,False
+CY-Bench Maize (Europe),2,2013-2014,Ridge,0.2551130214470991,False
+CY-Bench Maize (Europe),2,2013-2014,XGBoost,0.16455420444345217,False
+CY-Bench Maize (Europe),2,2014-2015,Random Forest,0.4579494932931838,False
+CY-Bench Maize (Europe),2,2014-2015,Ridge,0.28521950172397775,False
+CY-Bench Maize (Europe),2,2014-2015,XGBoost,0.3265734970209512,False
+CY-Bench Maize (Europe),2,2015-2016,Random Forest,0.3574165098255772,False
+CY-Bench Maize (Europe),2,2015-2016,Ridge,0.3560106173950697,False
+CY-Bench Maize (Europe),2,2015-2016,XGBoost,0.2535910209647605,False
+CY-Bench Maize (Europe),2,2016-2017,Random Forest,0.2379731278294507,False
+CY-Bench Maize (Europe),2,2016-2017,Ridge,0.299713679460461,False
+CY-Bench Maize (Europe),2,2016-2017,XGBoost,0.10296204500392758,False
+CY-Bench Maize (Europe),2,2017-2018,Random Forest,-0.215214110397926,True
+CY-Bench Maize (Europe),2,2017-2018,Ridge,-0.588362521599566,True
+CY-Bench Maize (Europe),2,2017-2018,XGBoost,-0.24347407594327639,True
+CY-Bench Maize (Europe),2,2018-2019,Random Forest,-0.9766758660334921,True
+CY-Bench Maize (Europe),2,2018-2019,Ridge,-0.9701169206692853,True
+CY-Bench Maize (Europe),2,2018-2019,XGBoost,-1.3002289269340714,True
+CY-Bench Maize (Europe),2,2019-2020,Random Forest,0.27241418450805593,False
+CY-Bench Maize (Europe),2,2019-2020,Ridge,0.35023134893675634,False
+CY-Bench Maize (Europe),2,2019-2020,XGBoost,0.23458836769719593,False
+CY-Bench Maize (Europe),5,2006-2010,Random Forest,0.5150533053831892,False
+CY-Bench Maize (Europe),5,2006-2010,Ridge,0.4708460985423492,False
+CY-Bench Maize (Europe),5,2006-2010,XGBoost,0.4155809840765716,False
+CY-Bench Maize (Europe),5,2007-2011,Random Forest,0.5019709420957998,False
+CY-Bench Maize (Europe),5,2007-2011,Ridge,0.49759318768358085,False
+CY-Bench Maize (Europe),5,2007-2011,XGBoost,0.4725578804142909,False
+CY-Bench Maize (Europe),5,2008-2012,Random Forest,0.5552947890920498,False
+CY-Bench Maize (Europe),5,2008-2012,Ridge,0.5496228077148401,False
+CY-Bench Maize (Europe),5,2008-2012,XGBoost,0.47881601499065624,False
+CY-Bench Maize (Europe),5,2009-2013,Random Forest,0.495419185698984,False
+CY-Bench Maize (Europe),5,2009-2013,Ridge,0.46834452927220543,False
+CY-Bench Maize (Europe),5,2009-2013,XGBoost,0.4563475813934246,False
+CY-Bench Maize (Europe),5,2010-2014,Random Forest,0.46532769951710745,False
+CY-Bench Maize (Europe),5,2010-2014,Ridge,0.42745942954480204,False
+CY-Bench Maize (Europe),5,2010-2014,XGBoost,0.37159724966807284,False
+CY-Bench Maize (Europe),5,2011-2015,Random Forest,0.5193493212695081,False
+CY-Bench Maize (Europe),5,2011-2015,Ridge,0.42623592112424963,False
+CY-Bench Maize (Europe),5,2011-2015,XGBoost,0.43270035592322276,False
+CY-Bench Maize (Europe),5,2012-2016,Random Forest,0.4356037829920685,False
+CY-Bench Maize (Europe),5,2012-2016,Ridge,0.42070174731904597,False
+CY-Bench Maize (Europe),5,2012-2016,XGBoost,0.32173133128544046,False
+CY-Bench Maize (Europe),5,2013-2017,Random Forest,0.3126104829569483,False
+CY-Bench Maize (Europe),5,2013-2017,Ridge,0.24216000724146733,False
+CY-Bench Maize (Europe),5,2013-2017,XGBoost,0.16295366263797084,False
+CY-Bench Maize (Europe),5,2014-2018,Random Forest,0.3265610184227856,True
+CY-Bench Maize (Europe),5,2014-2018,Ridge,0.2559450325665614,True
+CY-Bench Maize (Europe),5,2014-2018,XGBoost,0.27813125848945547,True
+CY-Bench Maize (Europe),5,2015-2019,Random Forest,0.16359112016244737,True
+CY-Bench Maize (Europe),5,2015-2019,Ridge,0.049609076559233155,True
+CY-Bench Maize (Europe),5,2015-2019,XGBoost,0.11133343490747753,True
+CY-Bench Maize (Europe),5,2016-2020,Random Forest,-0.042451925327350905,True
+CY-Bench Maize (Europe),5,2016-2020,Ridge,-0.21876751136940634,True
+CY-Bench Maize (Europe),5,2016-2020,XGBoost,-0.16623035844935774,True
+CY-Bench Wheat (Europe),3,2006-2008,Random Forest,0.1537165598963057,False
+CY-Bench Wheat (Europe),3,2006-2008,Ridge,0.4161764877779476,False
+CY-Bench Wheat (Europe),3,2006-2008,XGBoost,0.1660320992705961,False
+CY-Bench Wheat (Europe),3,2007-2009,Random Forest,0.0929644756217676,False
+CY-Bench Wheat (Europe),3,2007-2009,Ridge,0.3423101637729663,False
+CY-Bench Wheat (Europe),3,2007-2009,XGBoost,-0.0724135512930417,False
+CY-Bench Wheat (Europe),3,2008-2010,Random Forest,0.1977472404134146,False
+CY-Bench Wheat (Europe),3,2008-2010,Ridge,0.1329161280351202,False
+CY-Bench Wheat (Europe),3,2008-2010,XGBoost,0.1800785431510523,False
+CY-Bench Wheat (Europe),3,2009-2011,Random Forest,0.1816018402629826,False
+CY-Bench Wheat (Europe),3,2009-2011,Ridge,0.1658739206122967,False
+CY-Bench Wheat (Europe),3,2009-2011,XGBoost,0.1373202205019958,False
+CY-Bench Wheat (Europe),3,2010-2012,Random Forest,0.1841274167810667,False
+CY-Bench Wheat (Europe),3,2010-2012,Ridge,0.226417506467116,False
+CY-Bench Wheat (Europe),3,2010-2012,XGBoost,0.1543644302364043,False
+CY-Bench Wheat (Europe),3,2011-2013,Random Forest,0.1784892702864193,False
+CY-Bench Wheat (Europe),3,2011-2013,Ridge,0.3396963511365276,False
+CY-Bench Wheat (Europe),3,2011-2013,XGBoost,0.0719495905286565,False
+CY-Bench Wheat (Europe),3,2012-2014,Random Forest,0.2530758611652755,False
+CY-Bench Wheat (Europe),3,2012-2014,Ridge,0.3240969406734462,False
+CY-Bench Wheat (Europe),3,2012-2014,XGBoost,0.3241276584567222,False
+CY-Bench Wheat (Europe),3,2013-2015,Random Forest,0.2731177358470534,False
+CY-Bench Wheat (Europe),3,2013-2015,Ridge,0.3647852645253643,False
+CY-Bench Wheat (Europe),3,2013-2015,XGBoost,0.2661626532206495,False
+CY-Bench Wheat (Europe),3,2014-2016,Random Forest,0.2720903534551535,False
+CY-Bench Wheat (Europe),3,2014-2016,Ridge,0.4543098912684145,False
+CY-Bench Wheat (Europe),3,2014-2016,XGBoost,0.2443195788394972,False
+CY-Bench Wheat (Europe),3,2015-2017,Random Forest,0.1718585788504458,True
+CY-Bench Wheat (Europe),3,2015-2017,Ridge,0.0850840113780579,True
+CY-Bench Wheat (Europe),3,2015-2017,XGBoost,0.0550326780950476,True
+CY-Bench Wheat (Europe),3,2016-2018,Random Forest,-0.1453182076160008,True
+CY-Bench Wheat (Europe),3,2016-2018,Ridge,-0.6175351339892343,True
+CY-Bench Wheat (Europe),3,2016-2018,XGBoost,-0.4592978315178845,True
+CY-Bench Wheat (Europe),3,2017-2019,Random Forest,-1.0492426360889513,True
+CY-Bench Wheat (Europe),3,2017-2019,Ridge,-1.7563193432330897,True
+CY-Bench Wheat (Europe),3,2017-2019,XGBoost,-1.2779233845003624,True
+CY-Bench Wheat (Europe),3,2018-2020,Random Forest,0.0721565138077463,False
+CY-Bench Wheat (Europe),3,2018-2020,Ridge,-0.0270231706880937,False
+CY-Bench Wheat (Europe),3,2018-2020,XGBoost,-0.0903995952424332,False
+CY-Bench Wheat (Europe),2,2006-2007,Random Forest,0.21572479841028558,False
+CY-Bench Wheat (Europe),2,2006-2007,Ridge,0.3894897313157962,False
+CY-Bench Wheat (Europe),2,2006-2007,XGBoost,0.12277314423537648,False
+CY-Bench Wheat (Europe),2,2007-2008,Random Forest,-0.17887495912832796,False
+CY-Bench Wheat (Europe),2,2007-2008,Ridge,0.29941008193754054,False
+CY-Bench Wheat (Europe),2,2007-2008,XGBoost,-0.40495249539413175,False
+CY-Bench Wheat (Europe),2,2008-2009,Random Forest,0.2413562160043123,False
+CY-Bench Wheat (Europe),2,2008-2009,Ridge,0.3517737556275655,False
+CY-Bench Wheat (Europe),2,2008-2009,XGBoost,0.08349326431709152,False
+CY-Bench Wheat (Europe),2,2009-2010,Random Forest,-0.010384842847045217,False
+CY-Bench Wheat (Europe),2,2009-2010,Ridge,-0.0574748300973739,False
+CY-Bench Wheat (Europe),2,2009-2010,XGBoost,0.17280698205677916,False
+CY-Bench Wheat (Europe),2,2010-2011,Random Forest,0.11279830836490419,False
+CY-Bench Wheat (Europe),2,2010-2011,Ridge,0.09892691277732131,False
+CY-Bench Wheat (Europe),2,2010-2011,XGBoost,0.16458194226014047,False
+CY-Bench Wheat (Europe),2,2011-2012,Random Forest,0.14788033377442109,False
+CY-Bench Wheat (Europe),2,2011-2012,Ridge,0.3960902559691554,False
+CY-Bench Wheat (Europe),2,2011-2012,XGBoost,0.07930243208471377,False
+CY-Bench Wheat (Europe),2,2012-2013,Random Forest,0.2792873721165307,False
+CY-Bench Wheat (Europe),2,2012-2013,Ridge,0.32058820938218324,False
+CY-Bench Wheat (Europe),2,2012-2013,XGBoost,0.23532759600360564,False
+CY-Bench Wheat (Europe),2,2013-2014,Random Forest,0.24609280239411982,False
+CY-Bench Wheat (Europe),2,2013-2014,Ridge,0.270798954322693,False
+CY-Bench Wheat (Europe),2,2013-2014,XGBoost,0.19116135804683296,False
+CY-Bench Wheat (Europe),2,2014-2015,Random Forest,0.23168605433739067,False
+CY-Bench Wheat (Europe),2,2014-2015,Ridge,0.42182275275936226,False
+CY-Bench Wheat (Europe),2,2014-2015,XGBoost,0.38487343525576007,False
+CY-Bench Wheat (Europe),2,2015-2016,Random Forest,0.33253068717364404,False
+CY-Bench Wheat (Europe),2,2015-2016,Ridge,0.5226717936568182,False
+CY-Bench Wheat (Europe),2,2015-2016,XGBoost,0.15071208089399005,False
+CY-Bench Wheat (Europe),2,2016-2017,Random Forest,0.054057044180454684,True
+CY-Bench Wheat (Europe),2,2016-2017,Ridge,-0.16764049653096835,True
+CY-Bench Wheat (Europe),2,2016-2017,XGBoost,-0.09666193879569866,True
+CY-Bench Wheat (Europe),2,2017-2018,Random Forest,-0.9158500670362292,True
+CY-Bench Wheat (Europe),2,2017-2018,Ridge,-1.9462980337793185,True
+CY-Bench Wheat (Europe),2,2017-2018,XGBoost,-1.274494196926127,True
+CY-Bench Wheat (Europe),2,2018-2019,Random Forest,-1.0463181276000737,False
+CY-Bench Wheat (Europe),2,2018-2019,Ridge,-1.216088495575848,False
+CY-Bench Wheat (Europe),2,2018-2019,XGBoost,-1.2242084530688362,False
+CY-Bench Wheat (Europe),2,2019-2020,Random Forest,0.25322063278865364,False
+CY-Bench Wheat (Europe),2,2019-2020,Ridge,0.2820836181066653,False
+CY-Bench Wheat (Europe),2,2019-2020,XGBoost,0.2686754588993982,False
+CY-Bench Wheat (Europe),5,2006-2010,Random Forest,0.16319452396327994,False
+CY-Bench Wheat (Europe),5,2006-2010,Ridge,0.2152545772549859,False
+CY-Bench Wheat (Europe),5,2006-2010,XGBoost,0.060333270365110825,False
+CY-Bench Wheat (Europe),5,2007-2011,Random Forest,0.11045930821632681,False
+CY-Bench Wheat (Europe),5,2007-2011,Ridge,0.2507664364662324,False
+CY-Bench Wheat (Europe),5,2007-2011,XGBoost,0.14459578060973746,False
+CY-Bench Wheat (Europe),5,2008-2012,Random Forest,0.1758118001588939,False
+CY-Bench Wheat (Europe),5,2008-2012,Ridge,0.2891314460120725,False
+CY-Bench Wheat (Europe),5,2008-2012,XGBoost,0.18160569631039716,False
+CY-Bench Wheat (Europe),5,2009-2013,Random Forest,0.17577974314568226,False
+CY-Bench Wheat (Europe),5,2009-2013,Ridge,0.23396555818895456,False
+CY-Bench Wheat (Europe),5,2009-2013,XGBoost,0.21456362935897663,False
+CY-Bench Wheat (Europe),5,2010-2014,Random Forest,0.1962475118028136,False
+CY-Bench Wheat (Europe),5,2010-2014,Ridge,0.14621178542261218,False
+CY-Bench Wheat (Europe),5,2010-2014,XGBoost,0.18057321292495376,False
+CY-Bench Wheat (Europe),5,2011-2015,Random Forest,0.2425593686983283,False
+CY-Bench Wheat (Europe),5,2011-2015,Ridge,0.3774375780998798,False
+CY-Bench Wheat (Europe),5,2011-2015,XGBoost,0.15182068838743146,False
+CY-Bench Wheat (Europe),5,2012-2016,Random Forest,0.3557697153893861,False
+CY-Bench Wheat (Europe),5,2012-2016,Ridge,0.44886985913898014,False
+CY-Bench Wheat (Europe),5,2012-2016,XGBoost,0.23171191317062337,False
+CY-Bench Wheat (Europe),5,2013-2017,Random Forest,0.27357387868639554,True
+CY-Bench Wheat (Europe),5,2013-2017,Ridge,0.20330977004838666,True
+CY-Bench Wheat (Europe),5,2013-2017,XGBoost,0.11811655345204759,True
+CY-Bench Wheat (Europe),5,2014-2018,Random Forest,0.08653700852237896,True
+CY-Bench Wheat (Europe),5,2014-2018,Ridge,-0.07186167629588325,True
+CY-Bench Wheat (Europe),5,2014-2018,XGBoost,-0.14417276005040325,True
+CY-Bench Wheat (Europe),5,2015-2019,Random Forest,-0.2621430236282532,True
+CY-Bench Wheat (Europe),5,2015-2019,Ridge,-0.5027797375043382,True
+CY-Bench Wheat (Europe),5,2015-2019,XGBoost,-0.3675513895310913,True
+CY-Bench Wheat (Europe),5,2016-2020,Random Forest,-0.011065645703840202,True
+CY-Bench Wheat (Europe),5,2016-2020,Ridge,-0.29256210855466186,True
+CY-Bench Wheat (Europe),5,2016-2020,XGBoost,-0.16898715497204156,True
+CY-Bench Maize (Zambia),3,2006-2008,Random Forest,-0.0648114862613089,False
+CY-Bench Maize (Zambia),3,2006-2008,Ridge,-0.0045156133146209,False
+CY-Bench Maize (Zambia),3,2006-2008,XGBoost,-0.2617555910990997,False
+CY-Bench Maize (Zambia),3,2007-2009,Random Forest,-0.2901069947364847,False
+CY-Bench Maize (Zambia),3,2007-2009,Ridge,-0.2239352033273667,False
+CY-Bench Maize (Zambia),3,2007-2009,XGBoost,-0.6337991859591852,False
+CY-Bench Maize (Zambia),3,2008-2010,Random Forest,0.0041649804489002,False
+CY-Bench Maize (Zambia),3,2008-2010,Ridge,0.1309172819267641,False
+CY-Bench Maize (Zambia),3,2008-2010,XGBoost,-0.2459582928596838,False
+CY-Bench Maize (Zambia),3,2009-2011,Random Forest,0.2460825021437202,False
+CY-Bench Maize (Zambia),3,2009-2011,Ridge,0.265289978809488,False
+CY-Bench Maize (Zambia),3,2009-2011,XGBoost,0.134601951353797,False
+CY-Bench Maize (Zambia),3,2010-2012,Random Forest,0.0629051735198608,True
+CY-Bench Maize (Zambia),3,2010-2012,Ridge,0.0507548619402516,True
+CY-Bench Maize (Zambia),3,2010-2012,XGBoost,-0.0732020795186419,True
+CY-Bench Maize (Zambia),3,2011-2013,Random Forest,0.1376717579920728,True
+CY-Bench Maize (Zambia),3,2011-2013,Ridge,0.1409697429595291,True
+CY-Bench Maize (Zambia),3,2011-2013,XGBoost,0.0544034224761741,True
+CY-Bench Maize (Zambia),3,2012-2014,Random Forest,-0.091683286039464,True
+CY-Bench Maize (Zambia),3,2012-2014,Ridge,0.0311189472163561,True
+CY-Bench Maize (Zambia),3,2012-2014,XGBoost,-0.1611397419122383,True
+CY-Bench Maize (Zambia),3,2013-2015,Random Forest,0.2213648175651311,True
+CY-Bench Maize (Zambia),3,2013-2015,Ridge,0.2619585479453486,True
+CY-Bench Maize (Zambia),3,2013-2015,XGBoost,0.1111793152875125,True
+CY-Bench Maize (Zambia),3,2014-2016,Random Forest,0.2619383037048295,True
+CY-Bench Maize (Zambia),3,2014-2016,Ridge,0.1997664248898853,True
+CY-Bench Maize (Zambia),3,2014-2016,XGBoost,0.2550907417466208,True
+CY-Bench Maize (Zambia),3,2015-2017,Random Forest,0.3574206047419936,False
+CY-Bench Maize (Zambia),3,2015-2017,Ridge,0.4237288498072143,False
+CY-Bench Maize (Zambia),3,2015-2017,XGBoost,0.2817871443693159,False
+CY-Bench Maize (Zambia),2,2006-2007,Random Forest,0.16079284773565639,False
+CY-Bench Maize (Zambia),2,2006-2007,Ridge,0.2493515221116236,False
+CY-Bench Maize (Zambia),2,2006-2007,XGBoost,0.048579063996818585,False
+CY-Bench Maize (Zambia),2,2007-2008,Random Forest,-0.37386508738588947,False
+CY-Bench Maize (Zambia),2,2007-2008,Ridge,-0.2620771041992147,False
+CY-Bench Maize (Zambia),2,2007-2008,XGBoost,-0.872516059771348,False
+CY-Bench Maize (Zambia),2,2008-2009,Random Forest,-0.5866177405622306,False
+CY-Bench Maize (Zambia),2,2008-2009,Ridge,-0.3151333280387139,False
+CY-Bench Maize (Zambia),2,2008-2009,XGBoost,-0.9104979427391108,False
+CY-Bench Maize (Zambia),2,2009-2010,Random Forest,0.16241628779498932,False
+CY-Bench Maize (Zambia),2,2009-2010,Ridge,0.27630270292395837,False
+CY-Bench Maize (Zambia),2,2009-2010,XGBoost,-0.10184603464127921,False
+CY-Bench Maize (Zambia),2,2010-2011,Random Forest,0.18135761883934123,False
+CY-Bench Maize (Zambia),2,2010-2011,Ridge,0.1542652809544497,False
+CY-Bench Maize (Zambia),2,2010-2011,XGBoost,-0.03197116735281691,False
+CY-Bench Maize (Zambia),2,2011-2012,Random Forest,0.04259462973033027,True
+CY-Bench Maize (Zambia),2,2011-2012,Ridge,0.06763739261539654,True
+CY-Bench Maize (Zambia),2,2011-2012,XGBoost,-0.08840642757683163,True
+CY-Bench Maize (Zambia),2,2012-2013,Random Forest,0.147295965725049,True
+CY-Bench Maize (Zambia),2,2012-2013,Ridge,0.2587782289199545,True
+CY-Bench Maize (Zambia),2,2012-2013,XGBoost,0.1115200165087576,True
+CY-Bench Maize (Zambia),2,2013-2014,Random Forest,0.010528430208815923,True
+CY-Bench Maize (Zambia),2,2013-2014,Ridge,0.07473187791971558,True
+CY-Bench Maize (Zambia),2,2013-2014,XGBoost,-0.0969961610161963,True
+CY-Bench Maize (Zambia),2,2014-2015,Random Forest,0.23070969511769626,True
+CY-Bench Maize (Zambia),2,2014-2015,Ridge,0.25306130896450174,True
+CY-Bench Maize (Zambia),2,2014-2015,XGBoost,0.144955343735965,True
+CY-Bench Maize (Zambia),2,2015-2016,Random Forest,0.4808810051081614,False
+CY-Bench Maize (Zambia),2,2015-2016,Ridge,0.47149817490352836,False
+CY-Bench Maize (Zambia),2,2015-2016,XGBoost,0.4013942060987212,False
+CY-Bench Maize (Zambia),2,2016-2017,Random Forest,0.19010880877421724,False
+CY-Bench Maize (Zambia),2,2016-2017,Ridge,0.3817807998951192,False
+CY-Bench Maize (Zambia),2,2016-2017,XGBoost,0.09905207801322709,False
+CY-Bench Maize (Zambia),5,2006-2010,Random Forest,0.07729606908904607,False
+CY-Bench Maize (Zambia),5,2006-2010,Ridge,0.09286680899871647,False
+CY-Bench Maize (Zambia),5,2006-2010,XGBoost,-0.15760340305875728,False
+CY-Bench Maize (Zambia),5,2007-2011,Random Forest,0.11155701023964515,False
+CY-Bench Maize (Zambia),5,2007-2011,Ridge,0.16829525856579466,False
+CY-Bench Maize (Zambia),5,2007-2011,XGBoost,-0.11825820095701693,False
+CY-Bench Maize (Zambia),5,2008-2012,Random Forest,0.17108246079418776,True
+CY-Bench Maize (Zambia),5,2008-2012,Ridge,0.19966580949008836,True
+CY-Bench Maize (Zambia),5,2008-2012,XGBoost,0.05826758811776093,True
+CY-Bench Maize (Zambia),5,2009-2013,Random Forest,0.12988553450664522,True
+CY-Bench Maize (Zambia),5,2009-2013,Ridge,0.1702093503643336,True
+CY-Bench Maize (Zambia),5,2009-2013,XGBoost,-0.050337879317172894,True
+CY-Bench Maize (Zambia),5,2010-2014,Random Forest,-0.08270998979660804,True
+CY-Bench Maize (Zambia),5,2010-2014,Ridge,-0.0465016944295397,True
+CY-Bench Maize (Zambia),5,2010-2014,XGBoost,-0.16994778710297673,True
+CY-Bench Maize (Zambia),5,2011-2015,Random Forest,0.09853109022325057,True
+CY-Bench Maize (Zambia),5,2011-2015,Ridge,0.0392795013996606,True
+CY-Bench Maize (Zambia),5,2011-2015,XGBoost,-0.007728336775883915,True
+CY-Bench Maize (Zambia),5,2012-2016,Random Forest,0.02109455287136334,True
+CY-Bench Maize (Zambia),5,2012-2016,Ridge,0.021795522583080373,True
+CY-Bench Maize (Zambia),5,2012-2016,XGBoost,0.0727954924037127,True
+CY-Bench Maize (Zambia),5,2013-2017,Random Forest,0.10542740714069627,True
+CY-Bench Maize (Zambia),5,2013-2017,Ridge,0.08856679896780666,True
+CY-Bench Maize (Zambia),5,2013-2017,XGBoost,-0.07598656656523368,True
+SustainBench Soybean,3,2010-2012,Random Forest,0.1666215641960042,False
+SustainBench Soybean,3,2010-2012,Ridge,0.0735453186033799,False
+SustainBench Soybean,3,2010-2012,XGBoost,0.1201201961570675,False
+SustainBench Soybean,3,2011-2013,Random Forest,0.1933973885487399,False
+SustainBench Soybean,3,2011-2013,Ridge,0.1051638124799961,False
+SustainBench Soybean,3,2011-2013,XGBoost,0.1178676970016143,False
+SustainBench Soybean,3,2012-2014,Random Forest,0.3069295380896608,True
+SustainBench Soybean,3,2012-2014,Ridge,0.2742303834165114,True
+SustainBench Soybean,3,2012-2014,XGBoost,0.2090729484535473,True
+SustainBench Soybean,3,2013-2015,Random Forest,0.1749337549014708,True
+SustainBench Soybean,3,2013-2015,Ridge,0.2082490388284782,True
+SustainBench Soybean,3,2013-2015,XGBoost,0.1095300492715712,True
+SustainBench Soybean,3,2014-2016,Random Forest,-0.3241618154693011,True
+SustainBench Soybean,3,2014-2016,Ridge,-0.3262007698700662,True
+SustainBench Soybean,3,2014-2016,XGBoost,-0.3348434597787021,True
+SustainBench Soybean,2,2010-2011,Random Forest,0.21217535866932782,False
+SustainBench Soybean,2,2010-2011,Ridge,0.22228148661576183,False
+SustainBench Soybean,2,2010-2011,XGBoost,0.13904962577919397,False
+SustainBench Soybean,2,2011-2012,Random Forest,0.19065797970896822,False
+SustainBench Soybean,2,2011-2012,Ridge,0.04769043212164955,False
+SustainBench Soybean,2,2011-2012,XGBoost,0.15605584434725694,False
+SustainBench Soybean,2,2012-2013,Random Forest,0.1772419580219402,False
+SustainBench Soybean,2,2012-2013,Ridge,0.0920158392639359,False
+SustainBench Soybean,2,2012-2013,XGBoost,0.1261210698444387,False
+SustainBench Soybean,2,2013-2014,Random Forest,0.19850855795136493,True
+SustainBench Soybean,2,2013-2014,Ridge,0.27229695373500745,True
+SustainBench Soybean,2,2013-2014,XGBoost,0.13092657699742635,True
+SustainBench Soybean,2,2014-2015,Random Forest,0.22477143855336434,True
+SustainBench Soybean,2,2014-2015,Ridge,0.23481572749313182,True
+SustainBench Soybean,2,2014-2015,XGBoost,0.2821016424205834,True
+SustainBench Soybean,2,2015-2016,Random Forest,-0.5609535071190433,True
+SustainBench Soybean,2,2015-2016,Ridge,-0.5992872920124509,True
+SustainBench Soybean,2,2015-2016,XGBoost,-0.6131192323301291,True
+SustainBench Soybean,5,2010-2014,Random Forest,0.22790520464549802,True
+SustainBench Soybean,5,2010-2014,Ridge,0.1924495053747786,True
+SustainBench Soybean,5,2010-2014,XGBoost,0.1473746222884862,True
+SustainBench Soybean,5,2011-2015,Random Forest,0.2505940465660825,True
+SustainBench Soybean,5,2011-2015,Ridge,0.23362668546564844,True
+SustainBench Soybean,5,2011-2015,XGBoost,0.17420702308506178,True
+SustainBench Soybean,5,2012-2016,Random Forest,0.024953812397088455,True
+SustainBench Soybean,5,2012-2016,Ridge,0.045355504113533174,True
+SustainBench Soybean,5,2012-2016,XGBoost,-0.020428767776286993,True

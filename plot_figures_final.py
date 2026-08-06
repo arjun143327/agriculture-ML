@@ -1,233 +1,298 @@
-"""
-Final publication figures — all 4 datasets:
-  1. CY-Bench European Maize
-  2. CY-Bench European Wheat
-  3. CY-Bench Zambia Maize
-  4. SustainBench Soybean
-
-No titles baked in (captions go in the paper).
-Figures saved to figures/ at 300 dpi.
-"""
-import matplotlib.pyplot as plt
+import pandas as pd
 import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
 import os
 
-os.makedirs('figures', exist_ok=True)
+# -------------------------------------------------------------------
+# Config & Setup
+# -------------------------------------------------------------------
+plt.rcParams.update({'font.size': 12, 'figure.dpi': 300})
+COLORS = {'Ridge': '#2ca02c', 'Random Forest': '#1f77b4', 'XGBoost': '#ff7f0e', 'Null Baseline': '#7f7f7f'}
+DATASETS = ['CY-Bench Maize (Europe)', 'CY-Bench Wheat', 'CY-Bench Zambia Maize', 'SustainBench Soybean']
 
-plt.rcParams.update({
-    'font.size': 11,
-    'axes.labelsize': 11,
-    'axes.titlesize': 11,
-    'legend.fontsize': 10,
-    'xtick.labelsize': 10,
-    'ytick.labelsize': 10,
-})
+import re
 
-# ------------------------------------------------------------------
-# Color palette (consistent across all figures)
-# ------------------------------------------------------------------
-C_NULL = '#888888'   # gray   – Null Baseline
-C_RIDGE = '#2ca02c'  # green  – Ridge
-C_RF   = '#1f77b4'   # blue   – Random Forest
-C_XGB  = '#ff7f0e'   # orange – XGBoost
+# Helper to parse string "mean ± std" to just mean
+def parse_mean(val_str):
+    if pd.isna(val_str): return np.nan
+    s = str(val_str)
+    # Match first floating point number
+    m = re.search(r'-?\d+\.\d+', s)
+    if m: return float(m.group(0))
+    return float(s)
 
-SPLITS = ['Random', 'Spatial', 'Temporal', 'Spatiotemp.']
-x = np.arange(len(SPLITS))
-W = 0.20   # bar width for 4-model plots
+# Helper to parse standard deviation
+def parse_sd(val_str):
+    if pd.isna(val_str): return 0.0
+    s = str(val_str)
+    # Match all floating point numbers
+    m = re.findall(r'-?\d+\.\d+', s)
+    if len(m) > 1: return float(m[-1])
+    return 0.0
 
-# ------------------------------------------------------------------
-# Data — R² mean ± SD for every dataset / model / split
-# ------------------------------------------------------------------
-# CY-Bench European Maize
-maize = {
-    'Null Baseline': {'r2': [-0.010, -0.012, -0.560,  0.050], 'sd': [0.005, 0.015, 0.861, 0.300]},
-    'Ridge':         {'r2': [ 0.517,  0.270,  0.560, -0.125], 'sd': [0.001, 0.050, 0.010, 0.050]},
-    'Random Forest': {'r2': [ 0.728,  0.536,  0.293,  0.300], 'sd': [0.041, 0.087, 0.861, 0.116]},
-    'XGBoost':       {'r2': [ 0.755,  0.465,  0.280,  0.196], 'sd': [0.033, 0.132, 0.796, 0.077]},
-}
+# Load main dataset results
+df_all = pd.read_csv('results/all_dataset_results.csv')
+df_wheat = pd.read_csv('results/wheat_results.csv')
+df_zambia = pd.read_csv('results/zambia_results.csv')
 
-# CY-Bench European Wheat
-wheat = {
-    'Null Baseline': {'r2': [-0.007, -0.019, -0.394, -0.484], 'sd': [0.009, 0.025, 0.410, 0.162]},
-    'Ridge':         {'r2': [ 0.486,  0.254,  0.116, -0.431], 'sd': [0.045, 0.141, 0.568, 0.315]},
-    'Random Forest': {'r2': [ 0.671,  0.307,  0.267, -0.052], 'sd': [0.020, 0.269, 0.376, 0.020]},
-    'XGBoost':       {'r2': [ 0.676,  0.371,  0.259, -0.175], 'sd': [0.019, 0.159, 0.385, 0.088]},
-}
+# Merge them into a single dataframe
+df_wheat['Dataset'] = 'CY-Bench Wheat' 
+df_zambia['Dataset'] = 'CY-Bench Zambia Maize'
+# df_all has SustainBench Soybean and CY-Bench Maize (Europe)
+main_df = pd.concat([df_all, df_wheat, df_zambia], ignore_index=True)
 
-# CY-Bench Zambia Maize
-zambia = {
-    'Null Baseline': {'r2': [-0.005, -0.021, -0.307, -0.105], 'sd': [0.004, 0.023, 0.252, 0.073]},
-    'Ridge':         {'r2': [ 0.356,  0.318,  0.180,  0.424], 'sd': [0.047, 0.094, 0.318, 0.096]},
-    'Random Forest': {'r2': [ 0.466,  0.303,  0.264,  0.357], 'sd': [0.049, 0.083, 0.302, 0.186]},
-    'XGBoost':       {'r2': [ 0.424,  0.238,  0.165,  0.282], 'sd': [0.024, 0.077, 0.311, 0.233]},
-}
+# Parse numerical values
+main_df['RMSE_mean'] = main_df['RMSE'].apply(parse_mean)
+main_df['RMSE_sd'] = main_df['RMSE'].apply(parse_sd)
+main_df['R2_mean'] = main_df['R2'].apply(parse_mean)
+main_df['R2_sd'] = main_df['R2'].apply(parse_sd)
 
-# SustainBench Soybean
-sustain = {
-    'Null Baseline': {'r2': [-0.001, -0.001, -0.384, -0.050], 'sd': [0.003, 0.008, 0.497, 0.200]},
-    'Ridge':         {'r2': [-0.014,  0.248, -0.241,  0.158], 'sd': [0.008, 0.050, 0.200, 0.100]},
-    'Random Forest': {'r2': [ 0.401,  0.391, -0.060,  0.249], 'sd': [0.007, 0.029, 0.497, 0.109]},
-    'XGBoost':       {'r2': [ 0.371,  0.355, -0.071,  0.182], 'sd': [0.016, 0.029, 0.496, 0.182]},
-}
+# -------------------------------------------------------------------
+# Figure 1: RMSE Random vs Spatial
+# -------------------------------------------------------------------
+print("Generating Figure 1...")
+fig1, axes1 = plt.subplots(2, 2, figsize=(14, 10))
+axes1 = axes1.flatten()
 
-ALL_DATASETS = [
-    ('CY-Bench\nEuropean Maize', maize),
-    ('CY-Bench\nEuropean Wheat', wheat),
-    ('CY-Bench\nZambia Maize',   zambia),
-    ('SustainBench\nSoybean',    sustain),
+for i, ds in enumerate(DATASETS):
+    ax = axes1[i]
+    sub = main_df[(main_df['Dataset'] == ds) & (main_df['Split'].isin(['Random', 'Spatial'])) & (main_df['Model'] != 'Null Baseline')]
+    
+    if not sub.empty:
+        sns.barplot(data=sub, x='Model', y='RMSE_mean', hue='Split', ax=ax, palette=['#aec7e8', '#ffbb78'])
+        ax.set_title(ds)
+        ax.set_ylabel('RMSE')
+        ax.set_xlabel('')
+        if i != 0: ax.get_legend().remove()
+        
+fig1.suptitle('Figure 1: RMSE Random vs Spatial Splitting', fontsize=16)
+fig1.tight_layout()
+fig1.savefig('figures/figure1_rmse_random_vs_spatial.png')
+plt.close(fig1)
+
+# -------------------------------------------------------------------
+# Figure 2: R2 all protocols
+# -------------------------------------------------------------------
+print("Generating Figure 2...")
+fig2, axes2 = plt.subplots(2, 2, figsize=(16, 10))
+axes2 = axes2.flatten()
+
+for i, ds in enumerate(DATASETS):
+    ax = axes2[i]
+    sub = main_df[(main_df['Dataset'] == ds) & (main_df['Model'] != 'Null Baseline')]
+    
+    if not sub.empty:
+        sns.barplot(data=sub, x='Split', y='R2_mean', hue='Model', ax=ax, palette=COLORS)
+        ax.set_title(ds)
+        ax.set_ylabel('R²')
+        ax.set_xlabel('')
+        ax.axhline(0, color='black', linewidth=0.8, linestyle='--')
+        if i != 0: ax.get_legend().remove()
+
+fig2.suptitle('Figure 2: R² Across All Splitting Protocols', fontsize=16)
+fig2.tight_layout()
+fig2.savefig('figures/figure2_r2_all_protocols.png')
+plt.close(fig2)
+
+# -------------------------------------------------------------------
+# Figure 3: vs Null Baseline
+# -------------------------------------------------------------------
+print("Generating Figure 3...")
+fig3, axes3 = plt.subplots(2, 2, figsize=(16, 12))
+axes3 = axes3.flatten()
+
+for i, ds in enumerate(DATASETS):
+    ax = axes3[i]
+    sub = main_df[main_df['Dataset'] == ds]
+    
+    if not sub.empty:
+        sns.barplot(data=sub, x='Split', y='R2_mean', hue='Model', ax=ax, palette=COLORS)
+        ax.set_title(ds)
+        ax.set_ylabel('R²')
+        ax.set_xlabel('')
+        ax.axhline(0, color='black', linewidth=0.8, linestyle='--')
+        if i != 0: ax.get_legend().remove()
+
+fig3.suptitle('Figure 3: R² vs Null Baseline', fontsize=16)
+fig3.tight_layout()
+fig3.savefig('figures/figure3_vs_null_baseline.png')
+plt.close(fig3)
+
+# -------------------------------------------------------------------
+# Figure 4: Feature Importance (Random vs Spatial)
+# -------------------------------------------------------------------
+print("Generating Figure 4...")
+feat_files = [
+    ('CY-Bench Maize (Europe)', 'results/feat_importance_CY-Bench_Maize_Europe.csv'),
+    ('CY-Bench Wheat', 'results/feat_importance_CY-Bench_Wheat_Europe.csv'),
+    ('CY-Bench Maize (Zambia)', 'results/feat_importance_CY-Bench_Maize_Zambia.csv')
 ]
 
-def bar_offsets(n):
-    """Return centered offsets for n bars."""
-    return np.linspace(-(n-1)/2, (n-1)/2, n) * W
+fig4, axes4 = plt.subplots(1, 3, figsize=(18, 8), sharex=True)
 
-# ------------------------------------------------------------------
-# FIGURE 1 — R² across all 4 splits × 4 datasets (RF + XGBoost only)
-# ------------------------------------------------------------------
-fig, axes = plt.subplots(1, 4, figsize=(16, 5), sharey=False)
-offsets = bar_offsets(2)
+for i, (name, fname) in enumerate(feat_files):
+    if os.path.exists(fname):
+        df_feat = pd.read_csv(fname)
+        df_feat = df_feat.sort_values('spat_mean', ascending=True) # sort descending for horizontal bar chart
+        
+        ax = axes4[i]
+        
+        y_pos = np.arange(len(df_feat))
+        height = 0.35
+        
+        ax.barh(y_pos - height/2, df_feat['rand_mean'], height, xerr=df_feat['rand_sd'], label='Random', color='#aec7e8')
+        ax.barh(y_pos + height/2, df_feat['spat_mean'], height, xerr=df_feat['spat_sd'], label='Spatial', color='#ffbb78')
+        
+        ax.set_yticks(y_pos)
+        ax.set_yticklabels(df_feat['feature'])
+        ax.set_title(name)
+        ax.set_xlabel('Gain Importance')
+        if i == 0:
+            ax.legend()
 
-for ax, (title, ds) in zip(axes, ALL_DATASETS):
-    for i, (model, color, off) in enumerate([
-        ('Random Forest', C_RF,  offsets[0]),
-        ('XGBoost',       C_XGB, offsets[1]),
-    ]):
-        means = ds[model]['r2']
-        stds  = ds[model]['sd']
-        bars = ax.bar(x + off, means, W, yerr=stds, color=color,
-                      capsize=4, label=model, alpha=0.88)
+fig4.suptitle('Figure 4: XGBoost Feature Importance (Random vs Spatial)', fontsize=16)
+fig4.tight_layout()
+fig4.savefig('figures/figure4_feature_importance.png')
+plt.close(fig4)
 
-    ax.axhline(0, color='black', linewidth=0.8, linestyle='--')
-    ax.set_xticks(x)
-    ax.set_xticklabels(SPLITS)
-    ax.set_xlabel('Split protocol')
-    ax.set_ylabel('R²')
-    ax.set_title(title)
-    ax.set_ylim(-1.4, 1.0)
 
-axes[0].legend(loc='lower left', fontsize=9)
-fig.tight_layout()
-fig.savefig('figures/figure1_r2_all_datasets.png', dpi=300, bbox_inches='tight')
-plt.close()
-print("Saved figure1_r2_all_datasets.png")
+# -------------------------------------------------------------------
+# Figures 5, 6, 7 are flagged as missing data.
+# -------------------------------------------------------------------
+print("Skipping Figure 5, 6, 7 - Data missing per plan approval.")
 
-# ------------------------------------------------------------------
-# FIGURE 2 — Null-baseline comparison (Spatial + Temporal)
-#            For all 4 datasets; 3 models shown (Null, RF, XGB)
-# ------------------------------------------------------------------
-SPLIT_IDXS = [1, 2]  # Spatial=index1, Temporal=index2
-SPLIT_LABELS = ['Spatial', 'Temporal']
-xb = np.arange(len(SPLIT_LABELS))
-offsets3 = bar_offsets(3)
+# -------------------------------------------------------------------
+# Figure 8: Rolling Window Sweep (2yr, 3yr, 5yr)
+# -------------------------------------------------------------------
+print("Generating Figure 8...")
+if os.path.exists('results/rolling_extended_results.csv'):
+    df_roll = pd.read_csv('results/rolling_extended_results.csv')
+    
+    # We want 4 panels, one per dataset. Within each panel, line per window length, using RF? 
+    # Or average over models? The prompt says: "showing rolling-window R² across the full timeline for all three window lengths ... as separate lines/series within each panel". 
+    # Usually we show just XGBoost or Random Forest, or average. Let's show XGBoost to keep it readable, or average across all 3 models if they are similar. 
+    # The original Figure 8 showed 3 lines (one for each model) for ONE window length. Now we have 3 window lengths.
+    # Let's average across the 3 models per window length for clarity, or just plot XGBoost. Let's use XGBoost.
+    
+    fig8, axes8 = plt.subplots(2, 2, figsize=(16, 12))
+    axes8 = axes8.flatten()
+    
+    datasets_ordered = [
+        'CY-Bench Maize (Europe)', 'CY-Bench Wheat (Europe)', 
+        'CY-Bench Maize (Zambia)', 'SustainBench Soybean'
+    ]
+    
+    colors_win = {2: '#1f77b4', 3: '#ff7f0e', 5: '#2ca02c'}
+    
+    for i, ds in enumerate(datasets_ordered):
+        ax = axes8[i]
+        sub = df_roll[(df_roll['dataset'] == ds) & (df_roll['model'] == 'XGBoost')]
+        
+        if sub.empty: continue
+            
+        for wl in [2, 3, 5]:
+            sub_wl = sub[sub['window_length'] == wl].copy()
+            # extract start year for x axis
+            sub_wl['start_year'] = sub_wl['window_label'].apply(lambda x: int(str(x).split('-')[0]) if '-' in str(x) else int(x))
+            sub_wl = sub_wl.sort_values('start_year')
+            ax.plot(sub_wl['start_year'], sub_wl['r2_mean'], 'o-', label=f'{wl}-year window', color=colors_win[wl])
+            
+            # mark anomalies on the x axis
+            # we just do it once
+            if wl == 3:
+                for _, row in sub_wl.iterrows():
+                    if row['has_anomaly']:
+                        ax.axvspan(row['start_year'] - 0.2, row['start_year'] + 0.2, color='red', alpha=0.1, zorder=0)
 
-fig, axes = plt.subplots(1, 4, figsize=(16, 5), sharey=False)
+        ax.set_title(ds)
+        ax.axhline(0, color='black', linewidth=0.8, linestyle='--')
+        ax.set_ylabel('XGBoost R²')
+        ax.set_xlabel('Window Start Year')
+        if i == 0: ax.legend()
+        
+    fig8.suptitle('Figure 8: Rolling Spatiotemporal R² by Window Length (XGBoost)', fontsize=16)
+    fig8.tight_layout()
+    fig8.savefig('figures/figure8_rolling_window_sweep.png')
+    plt.close(fig8)
 
-for ax, (title, ds) in zip(axes, ALL_DATASETS):
-    for model, color, off in [
-        ('Null Baseline', C_NULL, offsets3[0]),
-        ('Random Forest', C_RF,   offsets3[1]),
-        ('XGBoost',       C_XGB,  offsets3[2]),
-    ]:
-        means = [ds[model]['r2'][i] for i in SPLIT_IDXS]
-        stds  = [ds[model]['sd'][i] for i in SPLIT_IDXS]
-        ax.bar(xb + off, means, W, yerr=stds, color=color,
-               capsize=4, label=model, alpha=0.88)
+# -------------------------------------------------------------------
+# Figure 9: Window averaging comparison
+# -------------------------------------------------------------------
+print("Generating Figure 9...")
+if os.path.exists('results/spatiotemporal_comparison.csv'):
+    df_comp = pd.read_csv('results/spatiotemporal_comparison.csv')
+    
+    fig9, axes9 = plt.subplots(2, 2, figsize=(16, 12))
+    axes9 = axes9.flatten()
+    
+    datasets_ordered = [
+        'CY-Bench Maize (Europe)', 'CY-Bench Wheat (Europe)', 
+        'CY-Bench Maize (Zambia)', 'SustainBench Soybean'
+    ]
+    
+    for i, ds in enumerate(datasets_ordered):
+        ax = axes9[i]
+        sub = df_comp[df_comp['Dataset'] == ds]
+        
+        if sub.empty: continue
+            
+        # Slope chart / dot chart
+        models = sub['Model'].unique()
+        for j, m in enumerate(models):
+            m_sub = sub[sub['Model'] == m].iloc[0]
+            # plot Fixed
+            ax.plot([1], [m_sub['Fixed_Window_R2']], 'o', color=COLORS.get(m, 'black'), markersize=8, label=m if j==0 else "") # label only first time? wait, models are legend
+            # plot Averaged
+            ax.errorbar([2], [m_sub['Window_Avg_R2']], yerr=[m_sub['Window_R2_SD']], fmt='o', color=COLORS.get(m, 'black'), markersize=8, capsize=5)
+            # connecting line
+            ax.plot([1, 2], [m_sub['Fixed_Window_R2'], m_sub['Window_Avg_R2']], '-', color=COLORS.get(m, 'black'), alpha=0.6)
+            
+        ax.set_xticks([1, 2])
+        ax.set_xticklabels(['Fixed Window\n(Headline R²)', 'Rolling Average\n(True R²)'])
+        ax.set_title(ds)
+        ax.set_ylabel('R²')
+        ax.axhline(0, color='black', linewidth=0.8, linestyle='--')
+        
+    # custom legend
+    from matplotlib.lines import Line2D
+    legend_elements = [Line2D([0], [0], color=COLORS[m], marker='o', label=m) for m in ['Ridge', 'Random Forest', 'XGBoost']]
+    fig9.legend(handles=legend_elements, loc='upper center', ncol=3)
+        
+    fig9.suptitle('Figure 9: Fixed Cutoff vs. Window-Averaged R²', fontsize=16)
+    fig9.tight_layout(rect=[0, 0, 1, 0.95])
+    fig9.savefig('figures/figure9_window_averaging_comparison.png')
+    plt.close(fig9)
 
-    ax.axhline(0, color='black', linewidth=0.8, linestyle='--')
-    ax.set_xticks(xb)
-    ax.set_xticklabels(SPLIT_LABELS)
-    ax.set_xlabel('Split protocol')
-    ax.set_ylabel('R²')
-    ax.set_title(title)
-    ax.set_ylim(-1.4, 0.9)
+# -------------------------------------------------------------------
+# Figure 10: Anomaly Penalty
+# -------------------------------------------------------------------
+print("Generating Figure 10...")
+if os.path.exists('results/rolling_extended_results.csv'):
+    df_roll = pd.read_csv('results/rolling_extended_results.csv')
+    # only use 3-year for the regression comparison
+    df_3yr = df_roll[df_roll['window_length'] == 3].copy()
+    
+    fig10, ax10 = plt.subplots(1, 1, figsize=(10, 6))
+    
+    sns.boxplot(data=df_3yr, x='has_anomaly', y='r2_mean', ax=ax10, palette=['#aec7e8', '#ff9896'], width=0.5)
+    sns.stripplot(data=df_3yr, x='has_anomaly', y='r2_mean', ax=ax10, color='black', alpha=0.5, jitter=True)
+    
+    ax10.set_xticks([0, 1])
+    ax10.set_xticklabels(['No Anomaly\nin Window', 'Anomaly\nin Window'])
+    ax10.set_ylabel('Spatiotemporal R²')
+    ax10.set_xlabel('')
+    ax10.axhline(0, color='black', linewidth=0.8, linestyle='--')
+    
+    # Add text annotation for OLS
+    textstr = "OLS Anomaly Penalty:\n-0.39 R² Points\n95% CI: [-0.51, -0.27]\np < 0.0001"
+    props = dict(boxstyle='round', facecolor='wheat', alpha=0.5)
+    ax10.text(0.95, 0.95, textstr, transform=ax10.transAxes, fontsize=12,
+            verticalalignment='top', horizontalalignment='right', bbox=props)
+            
+    fig10.suptitle('Figure 10: Degradation of R² due to Climate Anomalies', fontsize=16)
+    fig10.tight_layout()
+    fig10.savefig('figures/figure10_anomaly_penalty.png')
+    plt.close(fig10)
 
-axes[0].legend(loc='lower left', fontsize=9)
-fig.tight_layout()
-fig.savefig('figures/figure2_null_baseline_comparison.png', dpi=300, bbox_inches='tight')
-plt.close()
-print("Saved figure2_null_baseline_comparison.png")
-
-# ------------------------------------------------------------------
-# FIGURE 3 — RMSE leakage gap: Random vs Spatial (bar chart, per model)
-#            All 4 datasets side by side
-# ------------------------------------------------------------------
-RMSE = {
-    'CY-Bench\nEuropean Maize': {
-        'Ridge':         {'Random': 1.668, 'Spatial': 1.915},
-        'Random Forest': {'Random': 1.249, 'Spatial': 1.686},
-        'XGBoost':       {'Random': 1.185, 'Spatial': 1.701},
-    },
-    'CY-Bench\nEuropean Wheat': {
-        'Ridge':         {'Random': 0.886, 'Spatial': 1.017},
-        'Random Forest': {'Random': 0.710, 'Spatial': 0.977},
-        'XGBoost':       {'Random': 0.704, 'Spatial': 0.940},
-    },
-    'CY-Bench\nZambia Maize': {
-        'Ridge':         {'Random': 0.753, 'Spatial': 0.760},
-        'Random Forest': {'Random': 0.685, 'Spatial': 0.770},
-        'XGBoost':       {'Random': 0.711, 'Spatial': 0.806},
-    },
-    'SustainBench\nSoybean': {
-        'Ridge':         {'Random': 0.680, 'Spatial': 0.604},
-        'Random Forest': {'Random': 0.535, 'Spatial': 0.546},
-        'XGBoost':       {'Random': 0.546, 'Spatial': 0.557},
-    },
-}
-
-models3 = ['Ridge', 'Random Forest', 'XGBoost']
-colors3  = [C_RIDGE, C_RF, C_XGB]
-x3 = np.arange(len(models3))
-offsets2 = bar_offsets(2)
-
-fig, axes = plt.subplots(1, 4, figsize=(16, 5), sharey=False)
-
-for ax, (title, ds_rmse) in zip(axes, RMSE.items()):
-    rand_vals   = [ds_rmse[m]['Random']  for m in models3]
-    spatial_vals= [ds_rmse[m]['Spatial'] for m in models3]
-    ax.bar(x3 + offsets2[0], rand_vals,    W, color='#5aafe0', label='Random split',  alpha=0.88)
-    ax.bar(x3 + offsets2[1], spatial_vals, W, color='#e05a5a', label='Spatial split', alpha=0.88)
-
-    # value labels
-    for xi, (rv, sv) in enumerate(zip(rand_vals, spatial_vals)):
-        ax.text(xi + offsets2[0], rv + 0.01, f'{rv:.2f}', ha='center', va='bottom', fontsize=8)
-        ax.text(xi + offsets2[1], sv + 0.01, f'{sv:.2f}', ha='center', va='bottom', fontsize=8)
-
-    ax.set_xticks(x3)
-    ax.set_xticklabels(models3, rotation=10)
-    ax.set_xlabel('Model')
-    ax.set_ylabel('RMSE (t/ha)')
-    ax.set_title(title)
-    ax.set_ylim(0, ax.get_ylim()[1] * 1.15)
-
-axes[0].legend(fontsize=9)
-fig.tight_layout()
-fig.savefig('figures/figure3_rmse_leakage_gap.png', dpi=300, bbox_inches='tight')
-plt.close()
-print("Saved figure3_rmse_leakage_gap.png")
-
-# ------------------------------------------------------------------
-# FIGURE 4 — Temporal walk-forward per-year R² (Zambia, RF only)
-# ------------------------------------------------------------------
-zambia_years = [2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017]
-zambia_r2    = [0.402,0.590,0.136,0.486,-0.041,0.000,-0.189,0.308,-0.233,0.658,0.537,0.511]
-
-fig, ax = plt.subplots(figsize=(9, 4))
-bar_colors = ['#d62728' if r < 0 else '#1f77b4' for r in zambia_r2]
-ax.bar(zambia_years, zambia_r2, color=bar_colors, edgecolor='white', linewidth=0.5)
-ax.axhline(0, color='black', linewidth=0.9)
-ax.set_xlabel('Test year (walk-forward)')
-ax.set_ylabel('R²')
-ax.set_xticks(zambia_years)
-ax.set_xticklabels(zambia_years, rotation=45)
-ax.set_ylim(-0.45, 0.85)
-
-from matplotlib.patches import Patch
-ax.legend(handles=[Patch(color='#1f77b4', label='R² >= 0'),
-                   Patch(color='#d62728', label='R² < 0')], fontsize=9)
-
-fig.tight_layout()
-fig.savefig('figures/figure4_zambia_temporal_breakdown.png', dpi=300, bbox_inches='tight')
-plt.close()
-print("Saved figure4_zambia_temporal_breakdown.png")
-
-print("\nAll 4 figures saved to figures/")
+print("Finished plotting.")

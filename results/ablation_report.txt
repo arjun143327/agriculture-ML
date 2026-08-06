@@ -1,0 +1,62 @@
+SOIL ABLATION EXPERIMENT
+================================================================================
+
+| Dataset | Model | Feature_Set | Split | RMSE | R2 | Random-vs-Spatial Gap |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| CY-Bench Maize (Europe) | Random Forest | Full | Random | 1.239 ± 0.049 | 0.740 ± 0.021 | 0.152 |
+| CY-Bench Maize (Europe) | Random Forest | Full | Spatial | 1.641 ± 0.091 | 0.588 ± 0.066 | 0.152 |
+| CY-Bench Maize (Europe) | Random Forest | No-Soil | Random | 1.434 ± 0.083 | 0.653 ± 0.018 | 0.124 |
+| CY-Bench Maize (Europe) | Random Forest | No-Soil | Spatial | 1.744 ± 0.185 | 0.529 ± 0.121 | 0.124 |
+| CY-Bench Maize (Europe) | XGBoost | Full | Random | 1.242 ± 0.048 | 0.738 ± 0.033 | 0.171 |
+| CY-Bench Maize (Europe) | XGBoost | Full | Spatial | 1.689 ± 0.035 | 0.567 ± 0.039 | 0.171 |
+| CY-Bench Maize (Europe) | XGBoost | No-Soil | Random | 1.494 ± 0.074 | 0.623 ± 0.023 | 0.167 |
+| CY-Bench Maize (Europe) | XGBoost | No-Soil | Spatial | 1.882 ± 0.143 | 0.456 ± 0.109 | 0.167 |
+| CY-Bench Wheat (Europe) | Random Forest | Full | Random | 0.751 ± 0.034 | 0.622 ± 0.028 | 0.290 |
+| CY-Bench Wheat (Europe) | Random Forest | Full | Spatial | 1.042 ± 0.260 | 0.332 ± 0.282 | 0.290 |
+| CY-Bench Wheat (Europe) | Random Forest | No-Soil | Random | 0.800 ± 0.040 | 0.571 ± 0.030 | 0.013 |
+| CY-Bench Wheat (Europe) | Random Forest | No-Soil | Spatial | 0.860 ± 0.137 | 0.558 ± 0.093 | 0.013 |
+| CY-Bench Wheat (Europe) | XGBoost | Full | Random | 0.751 ± 0.023 | 0.621 ± 0.021 | 0.314 |
+| CY-Bench Wheat (Europe) | XGBoost | Full | Spatial | 1.065 ± 0.231 | 0.308 ± 0.253 | 0.314 |
+| CY-Bench Wheat (Europe) | XGBoost | No-Soil | Random | 0.840 ± 0.026 | 0.527 ± 0.024 | -0.024 |
+| CY-Bench Wheat (Europe) | XGBoost | No-Soil | Spatial | 0.867 ± 0.111 | 0.551 ± 0.063 | -0.024 |
+| CY-Bench Maize (Zambia) | Random Forest | Full | Random | 0.653 ± 0.021 | 0.477 ± 0.057 | 0.185 |
+| CY-Bench Maize (Zambia) | Random Forest | Full | Spatial | 0.765 ± 0.084 | 0.292 ± 0.121 | 0.185 |
+| CY-Bench Maize (Zambia) | Random Forest | No-Soil | Random | 0.683 ± 0.009 | 0.431 ± 0.037 | 0.133 |
+| CY-Bench Maize (Zambia) | Random Forest | No-Soil | Spatial | 0.761 ± 0.077 | 0.298 ± 0.112 | 0.133 |
+| CY-Bench Maize (Zambia) | XGBoost | Full | Random | 0.698 ± 0.026 | 0.402 ± 0.085 | 0.208 |
+| CY-Bench Maize (Zambia) | XGBoost | Full | Spatial | 0.816 ± 0.088 | 0.194 ± 0.135 | 0.208 |
+| CY-Bench Maize (Zambia) | XGBoost | No-Soil | Random | 0.729 ± 0.017 | 0.349 ± 0.074 | 0.127 |
+| CY-Bench Maize (Zambia) | XGBoost | No-Soil | Spatial | 0.801 ± 0.090 | 0.222 ± 0.142 | 0.127 |
+
+
+--- KEY COMPARISONS ---
+
+# CY-Bench Maize (Europe)
+Random Forest:
+  Gap: 0.152 (Full) -> 0.124 (No-Soil)
+  Random R2: 0.740 -> 0.653
+  Spatial R2: 0.588 -> 0.529
+XGBoost:
+  Gap: 0.171 (Full) -> 0.167 (No-Soil)
+  Random R2: 0.738 -> 0.623
+  Spatial R2: 0.567 -> 0.456
+
+# CY-Bench Wheat (Europe)
+Random Forest:
+  Gap: 0.290 (Full) -> 0.013 (No-Soil)
+  Random R2: 0.622 -> 0.571
+  Spatial R2: 0.332 -> 0.558
+XGBoost:
+  Gap: 0.314 (Full) -> -0.024 (No-Soil)
+  Random R2: 0.621 -> 0.527
+  Spatial R2: 0.308 -> 0.551
+
+# CY-Bench Maize (Zambia)
+Random Forest:
+  Gap: 0.185 (Full) -> 0.133 (No-Soil)
+  Random R2: 0.477 -> 0.431
+  Spatial R2: 0.292 -> 0.298
+XGBoost:
+  Gap: 0.208 (Full) -> 0.127 (No-Soil)
+  Random R2: 0.402 -> 0.349
+  Spatial R2: 0.194 -> 0.222

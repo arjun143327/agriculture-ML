@@ -1,0 +1,109 @@
+DATASET | WINDOW | MODEL | R2_ORIGINAL | R2_INTERPOLATED | N_TRAIN_ORIG | N_TRAIN_INTERP | N_TEST_ORIG | N_TEST_INTERP
+CY-Bench Maize (Europe) | 2006-2008 | Random Forest | 0.500 | 0.514 | 1060.3 | 1060.3 | 45.0 | 45.0
+CY-Bench Maize (Europe) | 2006-2008 | Ridge | 0.495 | 0.499 | 1060.3 | 1060.3 | 45.0 | 45.0
+CY-Bench Maize (Europe) | 2006-2008 | XGBoost | 0.458 | 0.449 | 1060.3 | 1060.3 | 45.0 | 45.0
+CY-Bench Maize (Europe) | 2007-2009 | Random Forest | 0.549 | 0.545 | 1060.3 | 1060.3 | 45.0 | 45.0
+CY-Bench Maize (Europe) | 2007-2009 | Ridge | 0.521 | 0.526 | 1060.3 | 1060.3 | 45.0 | 45.0
+CY-Bench Maize (Europe) | 2007-2009 | XGBoost | 0.457 | 0.515 | 1060.3 | 1060.3 | 45.0 | 45.0
+CY-Bench Maize (Europe) | 2008-2010 | Random Forest | 0.543 | 0.537 | 1060.3 | 1060.3 | 45.0 | 45.0
+CY-Bench Maize (Europe) | 2008-2010 | Ridge | 0.452 | 0.454 | 1060.3 | 1060.3 | 45.0 | 45.0
+CY-Bench Maize (Europe) | 2008-2010 | XGBoost | 0.410 | 0.438 | 1060.3 | 1060.3 | 45.0 | 45.0
+CY-Bench Maize (Europe) | 2009-2011 | Random Forest | 0.465 | 0.457 | 1060.3 | 1060.3 | 45.0 | 45.0
+CY-Bench Maize (Europe) | 2009-2011 | Ridge | 0.415 | 0.403 | 1060.3 | 1060.3 | 45.0 | 45.0
+CY-Bench Maize (Europe) | 2009-2011 | XGBoost | 0.358 | 0.394 | 1060.3 | 1060.3 | 45.0 | 45.0
+CY-Bench Maize (Europe) | 2010-2012 | Random Forest | 0.543 | 0.523 | 1061.0 | 1061.0 | 44.7 | 44.7
+CY-Bench Maize (Europe) | 2010-2012 | Ridge | 0.523 | 0.515 | 1061.0 | 1061.0 | 44.7 | 44.7
+CY-Bench Maize (Europe) | 2010-2012 | XGBoost | 0.487 | 0.431 | 1061.0 | 1061.0 | 44.7 | 44.7
+CY-Bench Maize (Europe) | 2011-2013 | Random Forest | 0.531 | 0.538 | 1062.3 | 1062.3 | 44.0 | 44.0
+CY-Bench Maize (Europe) | 2011-2013 | Ridge | 0.540 | 0.529 | 1062.3 | 1062.3 | 44.0 | 44.0
+CY-Bench Maize (Europe) | 2011-2013 | XGBoost | 0.463 | 0.385 | 1062.3 | 1062.3 | 44.0 | 44.0
+CY-Bench Maize (Europe) | 2012-2014 | Random Forest | 0.534 | 0.530 | 1062.3 | 1062.3 | 44.0 | 44.0
+CY-Bench Maize (Europe) | 2012-2014 | Ridge | 0.520 | 0.524 | 1062.3 | 1062.3 | 44.0 | 44.0
+CY-Bench Maize (Europe) | 2012-2014 | XGBoost | 0.499 | 0.464 | 1062.3 | 1062.3 | 44.0 | 44.0
+CY-Bench Maize (Europe) | 2013-2015 | Random Forest | 0.374 | 0.421 | 1063.0 | 1063.0 | 43.7 | 43.7
+CY-Bench Maize (Europe) | 2013-2015 | Ridge | 0.143 | 0.186 | 1063.0 | 1063.0 | 43.7 | 43.7
+CY-Bench Maize (Europe) | 2013-2015 | XGBoost | 0.296 | 0.331 | 1063.0 | 1063.0 | 43.7 | 43.7
+CY-Bench Maize (Europe) | 2014-2016 | Random Forest | 0.320 | 0.401 | 1063.0 | 1063.0 | 43.7 | 43.7
+CY-Bench Maize (Europe) | 2014-2016 | Ridge | 0.367 | 0.393 | 1063.0 | 1063.0 | 43.7 | 43.7
+CY-Bench Maize (Europe) | 2014-2016 | XGBoost | 0.198 | 0.196 | 1063.0 | 1063.0 | 43.7 | 43.7
+CY-Bench Maize (Europe) | 2015-2017 | Random Forest | 0.346 | 0.418 | 1063.7 | 1063.7 | 43.3 | 43.3
+CY-Bench Maize (Europe) | 2015-2017 | Ridge | 0.305 | 0.310 | 1063.7 | 1063.7 | 43.3 | 43.3
+CY-Bench Maize (Europe) | 2015-2017 | XGBoost | 0.269 | 0.316 | 1063.7 | 1063.7 | 43.3 | 43.3
+CY-Bench Maize (Europe) | 2016-2018 | Random Forest | 0.096 | 0.303 | 1065.3 | 1065.3 | 43.0 | 43.0
+CY-Bench Maize (Europe) | 2016-2018 | Ridge | 0.013 | 0.214 | 1065.3 | 1065.3 | 43.0 | 43.0
+CY-Bench Maize (Europe) | 2016-2018 | XGBoost | -0.030 | 0.158 | 1065.3 | 1065.3 | 43.0 | 43.0
+CY-Bench Maize (Europe) | 2017-2019 | Random Forest | -0.501 | -0.096 | 1067.0 | 1067.0 | 42.7 | 42.7
+CY-Bench Maize (Europe) | 2017-2019 | Ridge | -0.816 | -0.418 | 1067.0 | 1067.0 | 42.7 | 42.7
+CY-Bench Maize (Europe) | 2017-2019 | XGBoost | -0.693 | -0.320 | 1067.0 | 1067.0 | 42.7 | 42.7
+CY-Bench Maize (Europe) | 2018-2020 | Random Forest | -0.127 | 0.180 | 1069.3 | 1069.3 | 42.0 | 42.0
+CY-Bench Maize (Europe) | 2018-2020 | Ridge | -0.123 | 0.153 | 1069.3 | 1069.3 | 42.0 | 42.0
+CY-Bench Maize (Europe) | 2018-2020 | XGBoost | -0.287 | 0.018 | 1069.3 | 1069.3 | 42.0 | 42.0
+CY-Bench Wheat (Europe) | 2006-2008 | Random Forest | 0.162 | 0.132 | 671.7 | 671.7 | 23.7 | 23.7
+CY-Bench Wheat (Europe) | 2006-2008 | Ridge | 0.416 | 0.433 | 671.7 | 671.7 | 23.7 | 23.7
+CY-Bench Wheat (Europe) | 2006-2008 | XGBoost | 0.166 | 0.255 | 671.7 | 671.7 | 23.7 | 23.7
+CY-Bench Wheat (Europe) | 2007-2009 | Random Forest | 0.027 | 0.108 | 663.0 | 663.0 | 25.0 | 25.0
+CY-Bench Wheat (Europe) | 2007-2009 | Ridge | 0.342 | 0.363 | 663.0 | 663.0 | 25.0 | 25.0
+CY-Bench Wheat (Europe) | 2007-2009 | XGBoost | -0.072 | 0.097 | 663.0 | 663.0 | 25.0 | 25.0
+CY-Bench Wheat (Europe) | 2008-2010 | Random Forest | 0.111 | 0.151 | 636.0 | 636.0 | 32.0 | 32.0
+CY-Bench Wheat (Europe) | 2008-2010 | Ridge | 0.133 | 0.162 | 636.0 | 636.0 | 32.0 | 32.0
+CY-Bench Wheat (Europe) | 2008-2010 | XGBoost | 0.180 | 0.232 | 636.0 | 636.0 | 32.0 | 32.0
+CY-Bench Wheat (Europe) | 2009-2011 | Random Forest | 0.183 | 0.196 | 627.7 | 627.7 | 34.7 | 34.7
+CY-Bench Wheat (Europe) | 2009-2011 | Ridge | 0.166 | 0.179 | 627.7 | 627.7 | 34.7 | 34.7
+CY-Bench Wheat (Europe) | 2009-2011 | XGBoost | 0.137 | 0.207 | 627.7 | 627.7 | 34.7 | 34.7
+CY-Bench Wheat (Europe) | 2010-2012 | Random Forest | 0.188 | 0.171 | 624.0 | 624.0 | 35.0 | 35.0
+CY-Bench Wheat (Europe) | 2010-2012 | Ridge | 0.226 | 0.227 | 624.0 | 624.0 | 35.0 | 35.0
+CY-Bench Wheat (Europe) | 2010-2012 | XGBoost | 0.154 | 0.102 | 624.0 | 624.0 | 35.0 | 35.0
+CY-Bench Wheat (Europe) | 2011-2013 | Random Forest | 0.151 | 0.153 | 623.3 | 623.3 | 35.3 | 35.3
+CY-Bench Wheat (Europe) | 2011-2013 | Ridge | 0.340 | 0.332 | 623.3 | 623.3 | 35.3 | 35.3
+CY-Bench Wheat (Europe) | 2011-2013 | XGBoost | 0.072 | 0.085 | 623.3 | 623.3 | 35.3 | 35.3
+CY-Bench Wheat (Europe) | 2012-2014 | Random Forest | 0.217 | 0.260 | 623.7 | 623.7 | 33.7 | 33.7
+CY-Bench Wheat (Europe) | 2012-2014 | Ridge | 0.324 | 0.332 | 623.7 | 623.7 | 33.7 | 33.7
+CY-Bench Wheat (Europe) | 2012-2014 | XGBoost | 0.324 | 0.270 | 623.7 | 623.7 | 33.7 | 33.7
+CY-Bench Wheat (Europe) | 2013-2015 | Random Forest | 0.207 | 0.234 | 634.3 | 634.3 | 32.3 | 32.3
+CY-Bench Wheat (Europe) | 2013-2015 | Ridge | 0.365 | 0.385 | 634.3 | 634.3 | 32.3 | 32.3
+CY-Bench Wheat (Europe) | 2013-2015 | XGBoost | 0.266 | 0.227 | 634.3 | 634.3 | 32.3 | 32.3
+CY-Bench Wheat (Europe) | 2014-2016 | Random Forest | 0.241 | 0.218 | 626.0 | 626.0 | 33.0 | 33.0
+CY-Bench Wheat (Europe) | 2014-2016 | Ridge | 0.454 | 0.471 | 626.0 | 626.0 | 33.0 | 33.0
+CY-Bench Wheat (Europe) | 2014-2016 | XGBoost | 0.244 | 0.239 | 626.0 | 626.0 | 33.0 | 33.0
+CY-Bench Wheat (Europe) | 2015-2017 | Random Forest | 0.157 | 0.224 | 631.7 | 631.7 | 33.7 | 33.7
+CY-Bench Wheat (Europe) | 2015-2017 | Ridge | 0.085 | 0.269 | 631.7 | 631.7 | 33.7 | 33.7
+CY-Bench Wheat (Europe) | 2015-2017 | XGBoost | 0.055 | 0.118 | 631.7 | 631.7 | 33.7 | 33.7
+CY-Bench Wheat (Europe) | 2016-2018 | Random Forest | -0.212 | -0.117 | 608.0 | 608.0 | 38.0 | 38.0
+CY-Bench Wheat (Europe) | 2016-2018 | Ridge | -0.618 | -0.403 | 608.0 | 608.0 | 38.0 | 38.0
+CY-Bench Wheat (Europe) | 2016-2018 | XGBoost | -0.459 | -0.375 | 608.0 | 608.0 | 38.0 | 38.0
+CY-Bench Wheat (Europe) | 2017-2019 | Random Forest | -1.083 | -0.827 | 610.0 | 610.0 | 37.0 | 37.0
+CY-Bench Wheat (Europe) | 2017-2019 | Ridge | -1.756 | -1.369 | 610.0 | 610.0 | 37.0 | 37.0
+CY-Bench Wheat (Europe) | 2017-2019 | XGBoost | -1.278 | -1.012 | 610.0 | 610.0 | 37.0 | 37.0
+CY-Bench Wheat (Europe) | 2018-2020 | Random Forest | 0.038 | 0.040 | 595.7 | 595.7 | 38.7 | 38.7
+CY-Bench Wheat (Europe) | 2018-2020 | Ridge | -0.027 | -0.039 | 595.7 | 595.7 | 38.7 | 38.7
+CY-Bench Wheat (Europe) | 2018-2020 | XGBoost | -0.090 | -0.057 | 595.7 | 595.7 | 38.7 | 38.7
+CY-Bench Maize (Zambia) | 2006-2008 | Random Forest | -0.065 | 0.113 | 798.0 | 798.0 | 42.0 | 42.0
+CY-Bench Maize (Zambia) | 2006-2008 | Ridge | -0.005 | 0.135 | 798.0 | 798.0 | 42.0 | 42.0
+CY-Bench Maize (Zambia) | 2006-2008 | XGBoost | -0.262 | -0.101 | 798.0 | 798.0 | 42.0 | 42.0
+CY-Bench Maize (Zambia) | 2007-2009 | Random Forest | -0.290 | -0.142 | 798.0 | 798.0 | 42.0 | 42.0
+CY-Bench Maize (Zambia) | 2007-2009 | Ridge | -0.224 | -0.051 | 798.0 | 798.0 | 42.0 | 42.0
+CY-Bench Maize (Zambia) | 2007-2009 | XGBoost | -0.634 | -0.189 | 798.0 | 798.0 | 42.0 | 42.0
+CY-Bench Maize (Zambia) | 2008-2010 | Random Forest | 0.004 | 0.167 | 798.0 | 798.0 | 42.0 | 42.0
+CY-Bench Maize (Zambia) | 2008-2010 | Ridge | 0.131 | 0.219 | 798.0 | 798.0 | 42.0 | 42.0
+CY-Bench Maize (Zambia) | 2008-2010 | XGBoost | -0.246 | -0.230 | 798.0 | 798.0 | 42.0 | 42.0
+CY-Bench Maize (Zambia) | 2009-2011 | Random Forest | 0.246 | 0.248 | 798.0 | 798.0 | 42.0 | 42.0
+CY-Bench Maize (Zambia) | 2009-2011 | Ridge | 0.265 | 0.255 | 798.0 | 798.0 | 42.0 | 42.0
+CY-Bench Maize (Zambia) | 2009-2011 | XGBoost | 0.135 | 0.120 | 798.0 | 798.0 | 42.0 | 42.0
+CY-Bench Maize (Zambia) | 2010-2012 | Random Forest | 0.063 | 0.146 | 798.0 | 798.0 | 42.0 | 42.0
+CY-Bench Maize (Zambia) | 2010-2012 | Ridge | 0.051 | 0.114 | 798.0 | 798.0 | 42.0 | 42.0
+CY-Bench Maize (Zambia) | 2010-2012 | XGBoost | -0.073 | -0.092 | 798.0 | 798.0 | 42.0 | 42.0
+CY-Bench Maize (Zambia) | 2011-2013 | Random Forest | 0.138 | 0.193 | 798.0 | 798.0 | 42.0 | 42.0
+CY-Bench Maize (Zambia) | 2011-2013 | Ridge | 0.141 | 0.200 | 798.0 | 798.0 | 42.0 | 42.0
+CY-Bench Maize (Zambia) | 2011-2013 | XGBoost | 0.054 | -0.019 | 798.0 | 798.0 | 42.0 | 42.0
+CY-Bench Maize (Zambia) | 2012-2014 | Random Forest | -0.092 | 0.270 | 798.0 | 798.0 | 42.0 | 42.0
+CY-Bench Maize (Zambia) | 2012-2014 | Ridge | 0.031 | 0.385 | 798.0 | 798.0 | 42.0 | 42.0
+CY-Bench Maize (Zambia) | 2012-2014 | XGBoost | -0.161 | 0.140 | 798.0 | 798.0 | 42.0 | 42.0
+CY-Bench Maize (Zambia) | 2013-2015 | Random Forest | 0.221 | 0.438 | 798.0 | 798.0 | 42.0 | 42.0
+CY-Bench Maize (Zambia) | 2013-2015 | Ridge | 0.262 | 0.435 | 798.0 | 798.0 | 42.0 | 42.0
+CY-Bench Maize (Zambia) | 2013-2015 | XGBoost | 0.111 | 0.353 | 798.0 | 798.0 | 42.0 | 42.0
+CY-Bench Maize (Zambia) | 2014-2016 | Random Forest | 0.262 | 0.440 | 798.0 | 798.0 | 42.0 | 42.0
+CY-Bench Maize (Zambia) | 2014-2016 | Ridge | 0.200 | 0.403 | 798.0 | 798.0 | 42.0 | 42.0
+CY-Bench Maize (Zambia) | 2014-2016 | XGBoost | 0.255 | 0.372 | 798.0 | 798.0 | 42.0 | 42.0
+CY-Bench Maize (Zambia) | 2015-2017 | Random Forest | 0.357 | 0.357 | 798.0 | 798.0 | 42.0 | 42.0
+CY-Bench Maize (Zambia) | 2015-2017 | Ridge | 0.424 | 0.384 | 798.0 | 798.0 | 42.0 | 42.0
+CY-Bench Maize (Zambia) | 2015-2017 | XGBoost | 0.282 | 0.225 | 798.0 | 798.0 | 42.0 | 42.0
